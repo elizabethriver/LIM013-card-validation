@@ -1,0 +1,180 @@
+  /* borde la caja es aplicado de manera universal a toda la pagina*/
+* {
+    box-sizing: border-box;
+  }
+  /* encabezado de la pagina*/
+  .header {
+    padding:20px;
+    text-align: center;
+    background: white;
+    }
+  /* titulo del encabezado*/
+  .header h1 {
+    font-size: 60px;
+  }
+   /* imagen del encabezado*/
+  .header img {
+    float: center;
+    width: 45%;
+    height: 50%;
+    background: #555555;
+  }
+  /* pie de pagina */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  /*  clase de boton desplegable*/
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 30px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 52px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  /*  clase de centrado de la vista*/
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+  }
+  /*  clase del cuerpo de la pagina*/ 
+  body {
+    font-family: Arial;
+    padding: 5%;
+    background: #118806;
+    background-image: url("2674659.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 100%;
+  }
+   /*  clase del contenido principal*/ 
+
+  main {
+    font-family: Arial;
+    padding: 10%;
+    background: #e1e2e1;
+  }
+  /* el estilo de letra de H1*/ 
+  H1 {
+    font-size: 300%;
+  }
+  /* el estilo de letra de p*/ 
+  p {
+    font-size: 200%;    
+  }
+  /* ocultar segunda pagina o vista*/ 
+  #mostrar { 
+    display : none;}
+
+  /* el estilo del contenido de la tarjeta*/ 
+  .card-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 40px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin: 0 auto 30px auto;
+  }
+    /* el estilo del contenido del input de la tarjeta*/ 
+  .card-container input {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 30px;
+    padding: 15px 15px 15px 25px;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+  }
+      /* el estilo del contenido del input de la tarjeta*/ 
+  .card-type {
+    width: 80px;
+    height: 56px;
+    background: url("images/cards.png");
+    background-position: 0 -291px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+  }
+        /* el estilo del contenido del input de la tarjeta*/ 
+  .card-type.mastercard {
+    background-position: 0 0;
+  }
+        /* el estilo del contenido del input de la tarjeta*/ 
+  .card-type.visa {
+    background-position: 0 -115px;
+  }
+        /* el estilo del contenido del input de la tarjeta*/ 
+  .card-type.amex {
+    background-position: 0 -57px;
+  }
+        /* el estilo del contenido del input de la tarjeta*/ 
+  .card-type.discover {
+    background-position: 0 -174px;
+  }
+        /* clase del elemento valid*/ 
+  .card-valid {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    line-height: 60px;
+    font-size: 40px;
+    font-family: 'icons';
+    color: #ccc;
+  }
+        /* clase del elemento valid active*/ 
+  .card-valid.active {
+    color: #42ca7c;
+  }
+/* clase del elemento detalles*/ 
+
+  .card-details {
+    width: 200%;
+    text-align: left;
+    margin-bottom: 30px;
+    transition: 300ms ease;
+  }
+/* clase del elemento input*/ 
+
+  .card-details input {
+    font-size: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+/* clase del elemento error*/ 
+
+
+/* clase del elemento fecha de expiracion*/ 
+
+  .card-details .expiration {
+    width: 50%;
+    float: left;
+    padding-right: 5%;
+  }
+
+  /* clase del elemento cvv*/ 
+
+  .card-details .cvv {
+    width: 45%;
+    float: left;
+    padding-right: 5%;
+  }
+
+  .creditCardForm {
+    max-width: 700px;
+    background-color: #fff;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
