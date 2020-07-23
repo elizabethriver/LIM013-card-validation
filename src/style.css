@@ -73,6 +73,9 @@
   /* ocultar segunda pagina o vista*/ 
   #mostrar { 
     display : none;}
+  #m_resultado { 
+    display : none;}
+  
 
   /* el estilo del contenido de la tarjeta*/ 
   .card-container {

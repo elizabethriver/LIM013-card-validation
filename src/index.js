@@ -8,9 +8,12 @@ button1.addEventListener('click', () => {
   });
 
 //var userNumInput = document.getElementById("number");
+const validacion = document.getElementById('validación');
+const mostrarVal = document.getElementById('msj');
 const button2 = document.getElementById('button2');
 button2.addEventListener('click', () => {
-  const cardNumber= document.getElementById('cardNumber').value;
-  validator.isValid(cardNumber);
+  let cardNumber= document.getElementById('cardNumber').value;
+  validacion.innerText=validator.isValid(cardNumber);
+  mostrarVal.innerText=validator.maskify(cardNumber);
 });
   
