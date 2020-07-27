@@ -15,10 +15,9 @@
         let validCard = "errónea";
   //condicionales segun algoritmo de lurhn
   //Si la longitud del array es igual a 16 se aplica para cada indice, la siguiente condicion
-
-        if (credicardNumArray.length === 16) {
-  // si el modulo es igual a 0, o par, el indice se añade al array singlenums
+// si el modulo es igual a 0, o par, el indice se añade al array singlenums
   //En caso contrario se añade al array siglenumbs y se multiplica por 2, convirtiendolo en un string
+        if (credicardNumArray.length === 16) {  
           for (var index = credicardNumArray.length-1; index >=0; index--) {
               if (index % 2 !== 0) {
                 singleNumsArray.push(credicardNumArray[index]);
@@ -40,7 +39,7 @@
   //si la var sum, su modulo entre 10 es igual a 0, se valida la tarjeta, en caso contrario, se rechaza
 
           if (sum % 10 === 0){
-            validCard = "correcta";
+            validCard = "verdadera";
           }
           return validCard;
     },
@@ -57,7 +56,6 @@
       //se establece un resultado: valor string de resultadoString + los 4 ultimos digitos visibles
 
       return resultadoString + stringCardNumber.substring(lengthCardNumber-4,lengthCardNumber);     
-
     }
   
   }
