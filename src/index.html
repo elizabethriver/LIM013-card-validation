@@ -17,75 +17,106 @@
         <h1>"Insumos agrícolas para la mujer campesina"</h1>
       </div>
     </header>
-<!---contenido de la pagina --->    
-    <main>
-      <div class="H1"><H1>Procesa tu compra</H1></div>
-      <div class="p"><p>¡Hey! ya falta poco para procesar tu compra: verifica tus datos</p></div>   
-      <div class="center">
-        <button class="button" type="button" id= "button1">Continuar</button>
-      </div> 
-      <div id= "mostrar" >
+<!---contenido de la pagina --->            
+    <main >
+      <div class="main">     
+          <H1 id="h1" class="ocultar">Procesa tu compra</H1>
+          <p id="p" class="ocultar">¡Hey! ya falta poco para procesar tu compra: verifica tus datos</p>   
         <div class="center">
-          <h1>Tus datos de pago</h1>
-        </div>      
-        <div class="center">
-          <div class="card-details clearfix">          
+          <div class="ocultar">
+            <button class="button" type="button" id= "button1">Continuar</button>
+          </div>
+<!---despliegue de tarjeta o formulario --->           
+          <div id= "mostrar">                                  
             <div class="creditCardForm">              
-              <form action="" method="post" id="myForm" class = creditCardForm>
-                <label for="Nombre">Nombre:</label>
-                <input type="text" class="form-control" id="name" maxlength="20"  pattern="[A-Za-z]{2,}" placeholder= "Nombre del titular" title="Nombre registrado en la tarjeta" required>                
-                <br><br>
-                <label for="Apellido">Apellidos</label>
-                <input type="text" class="form-control" id="lastname" maxlength="20" pattern="[A-Za-z]{2,}" placeholder= "Apellido del titular" title="Apellido registrado en la tarjeta" required>          
-                <br><br>
-                <label for="cardNumber">Numero de tarjeta</label>
-                <input type="text" class="form-control" id="cardNumber" pattern="[0-9]{16}" placeholder="XXXXXXXXXXXXXXXX" title="Son los 16 digitos que aparece en tu tarjeta" required>            
-                <small>Ejemplo: 4586453673894444</small>
-                <br><br>
-                <label for="CVV">CVV</label>
-                <input type="tel" class="form-control" id="cvv" placeholder= "CVV" pattern="[0-9]{3}" title="Los tres ultimos digitos al reverso de tu tarjeta" required> 
-                <small>Ejemplo: 345</small>
-                <br><br>
-                <div class ="card-details .expiration">
-                <label for="Fecha">Fecha de expedición</label>
-                  <select name="menu">
-                    <option value="01">January</option>
-                    <option value="02">February </option>
-                    <option value="03">March</option>
-                    <option value="04">April</option>
-                    <option value="05">May</option>
-                    <option value="06">June</option>
-                    <option value="07">July</option>
-                    <option value="08">August</option>
-                    <option value="09">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                  </select>
-                  <select>
-                    <option value="20"> 2020</option>
-                    <option value="21"> 2021</option>
-                    <option value="22"> 2022</option>
-                    <option value="23"> 2023</option>
-                    <option value="24"> 2024</option>
-                    <option value="25"> 2025</option>
-                  </select>
+              <form id="myForm" class= "card-container" name="myForm">
+                <h1>Tus datos de pago</h1>
+                <div class="form-control">
+                      <label for="name">Nombre del titular</label>
+                      <input type="text" name="name" placeholder="Nombre" pattern="[A-Za-z]{2,}" id="name" title= "Incorpora el nombre del titular de tu tarjeta" required>      
+                      <aside>Ejemplo: Elizabeth</aside>
+                </div>    
+                <div class="form-control">
+                      <label for="lastName">Apellido del titular</label>
+                      <input type="text" name="lastName" placeholder= "Apellido" pattern="[A-Za-z]{2,}" id="lastName" title="Apellido registrado en la tarjeta" required>       
+                      <aside>Ejemplo: Rivera</aside>
+                </div> 
+                <div class ="form-control">
+                      <label for="mes">Mes de expedición</label>
+                    <div class="select">
+                      <select id="mes" required>
+                        <option value="">Mes</option>    
+                        <option value="enero">Enero</option>
+                        <option value="febrero">Febrero</option>
+                        <option value="marzo">Marzo</option>
+                        <option value="abril">Abril</option>
+                        <option value="mayo">Mayo</option>
+                        <option value="junio">Junio</option>
+                        <option value="julio">Julio</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="septiembre">Septiembre</option>
+                        <option value="octubre">Octubre</option>
+                        <option value="noviembre">Noviembre</option>
+                        <option value="diciembre">Diciembre</option>
+                      </select>
+                        <aside>Ejemplo: Enero</aside>
+                    </div>
+                </div> 
+                <div class ="form-control">      
+                        <label for="año">Año de expedición</label>
+                    <div class="select">
+                      <select id="año" required>
+                        <option value="">Año</option>    
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                      </select>
+                        <aside>Ejemplo: 2020</aside>
+                    </div>
+                </div>                     
+                <div class="form-control">
+                      <label for="CVV">CVV</label>
+                      <input type="text" name="CVV" placeholder= "CVV" pattern="[0-9]{3}" id="CVV" title="Los tres ultimos digitos al reverso de tu tarjeta" required> 
+                      <aside>Ejemplo: 345</aside>
                 </div>
-                <br><br>
-                  <button class="button" type="button" id= "button2">Validar</button>
+                <div class="form-control">
+                      <label for="cardNumber">Número de tarjeta</label>
+                      <input type="text" name="cardNumber" placeholder="XXXXXXXXXXXXXXXX" pattern="[0-9]{16}"  id="cardNumber" title="Son los 16 digitos que aparece en tu tarjeta" required>            
+                      <aside>Ejemplo: 5000000000000000</aside>
+                </div>                                      
+                <img class="imgVisa" src="credit-card-visa.png" alt="visa">              
+                <img class="imgMastecard" src="mastercard.png" alt="mastercard">
+                <div class="form-control">
+<!---boton de validacion de tarjeta o formulario --->  
+                  <button class="myForm" type="submit" id= "button2">Validar</button>
+                </div>                                          
               </form>
-              <p id="validación"> </p>
-              <div id="msj"></div>
-            </div>                 
-          </div>  
-        </div>             
-      </div>    
-    </main>
+            </div>                                       
+          </div>
+<!---despliegue de msj de validacion o no del número de tarjeta --->  
+          <div class="cardMsj">
+            <p id="validación"></p>
+            <p id="msj"></p>  
+          </div>
+        
+        </div>
+<!---botonde reinicio de página --->  
+        <div>
+          <button class= "reload" type="button" id="reload" >Vover atrás</button> 
+        </div>
+                     
+      </div>
+    </main>     
     <footer>
-      <div class="p">
-        <p>Mujeres empoderadas<br>
-        <a href="mailto:mujeresempoder@gop.pe">mujeresempoder@gop.pe</a></p>
-      </div>    
+      <div class="footer">
+        <p>Copyright "Mujeres empoderadas"</p> 
+        <a href="mailto:mujeresempoder@gop.pe">e-mail: mujeresempoder@gop.pe</a><br>
+      </div>       
     </footer>
   </body>
   <script src="index.js" type="module"></script>
