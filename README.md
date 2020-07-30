@@ -18,8 +18,6 @@
 ## 1. Resumen del proyecto
 Es una app web de e-commerce de insumos agrícolas y se valida el pago con tarjeta de credito con el algortimo de luhn.
 ![2020-07-30T10_53_40](imagenes_readme/2020-07-30T10_53_40.png)
-![2020-07-30T10_53_40](https://user-images.githubusercontent.com/63525613/88966527-10e88500-d272-11ea-9234-08695757c85d.png)
-
 
 ## 2. Forma de descargar, instalar y ejecutar la aplicación e una introducción.
 Esto es una app web que el usuario (cliente) puede acceder desde la pagina principal de la tienda. 
@@ -64,7 +62,7 @@ Con respecto al vendedor, le permite tener una venta segura con datos verificado
 ## 6. Foto del primer prototipo
 
 A continuación, se presenta el primer prototipo creado para la aplicación
-![WhatsApp Image 2020-07-30 at 10 56 58](https://user-images.githubusercontent.com/63525613/88968281-bd2b6b00-d274-11ea-94d3-81ca0de46c25.jpeg)
+![WhatsApp Image 2020-07-30 at 10 56 58](imagenes_readme/WhatsApp Image 2020-07-30 at 10.56.58.jpeg)
 
 
 ## 7. Feedback recibido 
@@ -81,7 +79,7 @@ Cambiar el banckground por una imagen mejor definida.
 
 A continuación se visualiza el prototipo con algunas modificaciones
 
-![Elizabeth Rivera Ura's Team Colors (1)](https://user-images.githubusercontent.com/63525613/88968465-fcf25280-d274-11ea-8487-ce3a56508ef8.png)
+![Elizabeth Rivera Ura's Team Colors (1)](imagenes_readme/Elizabeth Rivera Ura's Team Colors (1).png)
 
 
 
@@ -89,7 +87,7 @@ A continuación se visualiza el prototipo con algunas modificaciones
 
 A continuación se visualiza el prototipo final
 
-![Elizabeth Rivera Ura's Team Colors (Copy)](https://user-images.githubusercontent.com/63525613/88968530-1398a980-d275-11ea-8f07-c9dcbacb27f5.png)
+![Elizabeth Rivera Ura's Team Colors (Copy)](imagenes_readme/Elizabeth Rivera Ura's Team Colors (Copy).png)
 
 ## 9. Objetivos de aprendizaje
 
@@ -141,7 +139,7 @@ Se considero como objetivos de aprendizajes lo siguiente:
 Las pruebas unitarias deben dar un X en _coverage_ (cobertura), 100%
 _statements_ (sentencias), 100%  _functions_ (funciones) y _lines_ (líneas); y 83.33% de _branches_ (ramas).
 
-![test](https://user-images.githubusercontent.com/63525613/88968580-257a4c80-d275-11ea-87b9-253d5d7fbaa6.png)
+![test](imagenes_readme/test.png)
 
 
 ***
