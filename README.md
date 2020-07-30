@@ -64,8 +64,8 @@ Con respecto al vendedor, le permite tener una venta segura con datos verificado
 ## 6. Foto del primer prototipo
 
 A continuación, se presenta el primer prototipo creado para la aplicación
-[](url)
-![Elizabeth Rivera Ura's Team Colors (1)](https://user-images.githubusercontent.com/63525613/88968124-75a4df00-d274-11ea-9ffd-c30b4b38005f.png)
+![WhatsApp Image 2020-07-30 at 10 56 58](https://user-images.githubusercontent.com/63525613/88968281-bd2b6b00-d274-11ea-94d3-81ca0de46c25.jpeg)
+
 
 ## 7. Feedback recibido 
 
