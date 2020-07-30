@@ -18,7 +18,8 @@
 ## 1. Resumen del proyecto
 Es una app web de e-commerce de insumos agrícolas y se valida el pago con tarjeta de credito con el algortimo de luhn.
 
-![name] (imagenes_readme\WhatsApp Image 2020-07-30 at 10.56.58.jpeg)
+![2020-07-30T10_53_40](https://user-images.githubusercontent.com/63525613/88966527-10e88500-d272-11ea-9234-08695757c85d.png)
+
 
 ## 2. Forma de descargar, instalar y ejecutar la aplicación e una introducción.
 Esto es una app web que el usuario (cliente) puede acceder desde la pagina principal de la tienda. 
