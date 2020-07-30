@@ -62,7 +62,7 @@ Con respecto al vendedor, le permite tener una venta segura con datos verificado
 ## 6. Foto del primer prototipo
 
 A continuación, se presenta el primer prototipo creado para la aplicación
-![WhatsApp Image 2020-07-30 at 10 56 58](imagenes_readme/WhatsApp Image 2020-07-30 at 10.56.58.jpeg)
+![WhatsApp Image 2020-07-30 at 10 56 58](imagenes_readme/WhatsApp%20Image%202020-07-30%20at%2010.56.58.jpeg)
 
 
 ## 7. Feedback recibido 
@@ -79,7 +79,7 @@ Cambiar el banckground por una imagen mejor definida.
 
 A continuación se visualiza el prototipo con algunas modificaciones
 
-![Elizabeth Rivera Ura's Team Colors (1)](imagenes_readme/Elizabeth Rivera Ura's Team Colors (1).png)
+![Elizabeth Rivera Ura's Team Colors (1)](imagenes_readme/Elizabeth%20Rivera%20Ura's%20Team%20Colors%20(1).png)
 
 
 
@@ -87,7 +87,7 @@ A continuación se visualiza el prototipo con algunas modificaciones
 
 A continuación se visualiza el prototipo final
 
-![Elizabeth Rivera Ura's Team Colors (Copy)](imagenes_readme/Elizabeth Rivera Ura's Team Colors (Copy).png)
+![Elizabeth Rivera Ura's Team Colors (Copy)](imagenes_readme/Elizabeth%20Rivera%20Ura's%20Team%20Colors%20(Copy).png)
 
 ## 9. Objetivos de aprendizaje
 
