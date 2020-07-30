@@ -61,6 +61,8 @@ Con respecto al vendedor, le permite tener una venta segura con datos verificado
 ## 6. Foto del primer prototipo
 
 A continuación, se presenta el primer prototipo creado para la aplicación
+[![name](image)](https://github.com/elizabethriver/LIM013-card-validation/blob/master/WhatsApp%20Image%202020-07-30%20at%2010.56.58.jpeg)
+
 
 ## 7. Feedback recibido 
 
