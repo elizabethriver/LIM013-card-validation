@@ -18,6 +18,8 @@
 ## 1. Resumen del proyecto
 Es una app web de e-commerce de insumos agrícolas y se valida el pago con tarjeta de credito con el algortimo de luhn.
 
+![name] (imagenes_readme\WhatsApp Image 2020-07-30 at 10.56.58.jpeg)
+
 ## 2. Forma de descargar, instalar y ejecutar la aplicación e una introducción.
 Esto es una app web que el usuario (cliente) puede acceder desde la pagina principal de la tienda. 
 
@@ -61,8 +63,7 @@ Con respecto al vendedor, le permite tener una venta segura con datos verificado
 ## 6. Foto del primer prototipo
 
 A continuación, se presenta el primer prototipo creado para la aplicación
-[![name](image)](https://github.com/elizabethriver/LIM013-card-validation/blob/master/WhatsApp%20Image%202020-07-30%20at%2010.56.58.jpeg)
-
+![name] (imagenes_readme\2020-07-30T10_53_40.png)
 
 ## 7. Feedback recibido 
 
@@ -76,9 +77,16 @@ La vista de resultados deberia de verse en un cuadrito, más que un msj de promp
 
 Cambiar el banckground por una imagen mejor definida.
 
+A continuación se visualiza el prototipo con algunas modificaciones
+
+![name] (imagenes_readme\Elizabeth Rivera Ura's Team Colors (1).png)
+
+
 ## 8. Imagen del prototipo final
 
-A continuación se visualiza el contenido final 
+A continuación se visualiza el prototipo final
+
+![name] (imagenes_readme\Elizabeth Rivera Ura's Team Colors (Copy).png)
 
 ## 9. Objetivos de aprendizaje
 
@@ -129,6 +137,8 @@ Se considero como objetivos de aprendizajes lo siguiente:
 
 Las pruebas unitarias deben dar un X en _coverage_ (cobertura), 100%
 _statements_ (sentencias), 100%  _functions_ (funciones) y _lines_ (líneas); y 83.33% de _branches_ (ramas).
+
+![name] (imagenes_readme\test.png)
 
 ***
 
