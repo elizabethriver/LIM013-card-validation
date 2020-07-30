@@ -4,33 +4,39 @@
   }
   /* encabezado de la pagina*/
   .header {
-    padding:4%;
-    margin: 1%;
+    padding:1%;
     text-align: center;
-    background: white;
+    background: rgb(233, 231, 231);
+    width: 100%;
+    height: auto;
+    opacity:0.7;
   }
   /* titulo de encabezado de la pagina*/
   .header h1 {
-      font-size: 20px;
+      font-size: 150%;
+      margin-top: 1% ;
   }
   /* imagen del encabezado*/
   .header img {
     float: center;
-    width: 45%;
-    height: 50%;
-    background: #555555;
+    width: 20%;
+    height: 15%;
+    
   }
   /*clase del contenido principal*/ 
   .main {
-    padding:2%;
+    padding:5%;
     background: rgb(216, 212, 212);
-    margin: 1%;
+    width: 100%;
+    max-height: fit-content;
+    margin-top: 1%;
+    opacity:0.9;
     
   }
   /* el estilo de letra de H1*/ 
   .main H1 {
     text-align: center;
-    font-size: 100%;
+    font-size: 150%;
   }
   /* el estilo de letra de p*/ 
   .main p {
@@ -39,22 +45,26 @@
   }
   /* pie de pagina */
   .footer {
-    padding: 0.8%;
-    text-align: end;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #4CAF50;
-    color: rgb(241, 239, 239);
+    color: white;
+    text-align: left;
     font-size: 50%;
+    padding: 1%;
+    opacity:0.7;
   }
 /* pie de pagina enlace */
   .footer a {
-    color: #f5efef;
-    padding: 0.8%;
+    color: white; 
   }  
 /*  clase de boton desplegable*/
   .button {
     background-color: #4CAF50;
     color: white;
-    padding:8%;
+    padding:10%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -77,33 +87,46 @@
     font-family: Arial;
     padding: 5%;
     background: #118806;
-    background-image: url("2674659.jpg");
-    background-repeat: no-repeat, repeat;   
+    background-image: url("6749.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: 2500px, 2200px, cover;
   }
+
+
 /* mostrar segunda pagina o vista*/ 
   #mostrar { 
     display : none;}
+/* mostrar boton reload*/ 
+  #mostrar1 { 
+  display : none;}
+
+  #mostrar2 { 
+  display : none;}
 /* ocultar segunda pagina o vista*/
   #ocultar { 
     display : block;}
   /* el estilo del contenido de la tarjeta*/ 
+
+
+
   .creditCardForm {
-    width: 150%;
+    width: 600px;
+    height: 650px; 
     background-color: rgb(245, 229, 10);
-    margin: auto;
-    overflow: hidden;
-    padding: 10%;
-    color: #2d2d2e;
+    font-size: 90%;   
+    overflow: hidden;    
+    color: black;
     border-radius: 15px;       
   }
   /* el estilo del contenido del formulario*/  
   .card-container {
-    padding: 1%;    
+    padding: 3%;    
     position: static;
     justify-content: center ;  
-    align-items: stretch;
-    line-height: 1.4em;
-    width: 100%;       
+    
+    line-height: 1%;
+    width: 600px;
+    height: 400px;       
   }
   /* el estilo del titulo del contenido de la tarjeta*/  
   .card-container h1{
@@ -117,6 +140,8 @@
     padding: 5%;
     position: sticky;
     width: 100%;
+    align-items: stretch;
+    line-height: 1.4em;
   }
   /* el estilo del contenido del label del formulario*/   
   .form-control label {
@@ -126,7 +151,7 @@
   }
   /* el estilo del contenido del input del formulario*/     
   .form-control input {
-    border: 1px solid #f0f0f0;
+    border: none;
     border-radius: 10px;
     display: block;
     font-family: inherit;
@@ -143,7 +168,7 @@
     padding: 10px;
     width: 100%;
     border: 1px solid #f0f0f0;
-    border-radius: 15px;
+    border-radius: 12px;
     appearance: none;
     background-color: #fff;  
   }
@@ -161,31 +186,33 @@
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 200%;
-    padding: 5%;
-    margin: inherit;
-    width: 100%;
-    cursor: pointer
+    font-size: 100%;
+    padding: 2%;
+    width: 50%;
+    cursor: pointer;
+    
+    margin-top: 5%;  
   } 
 
   /* el estilo de la imagen tarjeta mastercard*/ 
   .imgMastecard {
-    background-position: 0 0;
-    max-width: 80px;
+    background-position: -100px 0;
+    width: 80px;
     height:auto;
-    margin: 0.5em;
-    position: relative;
-    left: 35px; 
+    
+    float: right;
+    margin-right: 4%;
+    margin-bottom: 2%;  
   }
   /*  el estilo de la imagen tarjeta visa*/ 
   .imgVisa {
-    background-position: 0 -100px;
-    max-width:80px;
+    background-position: 0 0px;
+    width: 80px;
     height:auto;
-    float: left;
-    position: relative;
-    left: 25px; 
+    float: right;
+
+    
+    margin-bottom: 2%; 
   }
   /*  el estilo de los msj aside*/ 
   aside {
@@ -196,23 +223,31 @@
   /*  el estilo de boton de recarga*/ 
   .reload {
     background-color: #858b85;
-    color: rgb(243, 239, 239);
+    color: white;
     padding:1%;
     text-align: center;
     text-decoration: none;
     display:inline-block;
-    font-size: 60%;
-    margin: 4px 2px;
+    font-size: 100%;    
     cursor: pointer;
     border: none;
-    border-radius: 15px
+    border-radius: 15px;
+    margin-top: 10%;
   }
 
-  .card {
-    padding: 1%;    
+  .cardMsj {
+    margin-top: 15%;
+    background-color:  #4CAF50;
+    padding: 2%;    
     position: static;
     justify-content: center ;  
     align-items: stretch;
     line-height: 1.4em;
-    width: 100%;       
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 15px;     
   }
+
+
+  

@@ -12,10 +12,10 @@ describe('validator', () => {
     });
 
     it('debería retornar true para "4716621483139473"', () => {
-      expect(validator.isValid("4716621483139473")).toBe("verdadera");
+      expect(validator.isValid("4716621483139473")).toBe("Procesada tu compra, tu tarjeta es correcta");
     });
     it('debería retornar false para "4586453673894444"', () => {
-      expect(validator.isValid("4586453673894444")).toBe("errónea");
+      expect(validator.isValid("4586453673894444")).toBe("¡Lo sentimos! No pudimos procesar tu compra, tu tarjeta es incorrecta");
     });
   });
 

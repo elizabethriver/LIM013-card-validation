@@ -12,7 +12,7 @@
         let singleNumsArray = []; 
         let doubleNumsArray = [];
         let arrayFinal = undefined;
-        let validCard = "errónea";
+        let validCard = "¡Lo sentimos! No pudimos procesar tu compra, tu tarjeta es incorrecta";
   //condicionales segun algoritmo de lurhn
   //Si la longitud del array es igual a 16 se aplica para cada indice, la siguiente condicion
 // si el modulo es igual a 0, o par, el indice se añade al array singlenums
@@ -39,7 +39,7 @@
   //si la var sum, su modulo entre 10 es igual a 0, se valida la tarjeta, en caso contrario, se rechaza
 
           if (sum % 10 === 0){
-            validCard = "verdadera";
+            validCard = "Procesada tu compra, tu tarjeta es correcta";
           }
           return validCard;
     },
