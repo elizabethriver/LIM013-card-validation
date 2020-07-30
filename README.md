@@ -81,14 +81,15 @@ Cambiar el banckground por una imagen mejor definida.
 
 A continuación se visualiza el prototipo con algunas modificaciones
 
-![name] (imagenes_readme\Elizabeth Rivera Ura's Team Colors (1).png)
+![Elizabeth Rivera Ura's Team Colors (1)](https://user-images.githubusercontent.com/63525613/88968465-fcf25280-d274-11ea-8487-ce3a56508ef8.png)
+
 
 
 ## 8. Imagen del prototipo final
 
 A continuación se visualiza el prototipo final
 
-![name] (imagenes_readme\Elizabeth Rivera Ura's Team Colors (Copy).png)
+![Elizabeth Rivera Ura's Team Colors (Copy)](https://user-images.githubusercontent.com/63525613/88968530-1398a980-d275-11ea-8f07-c9dcbacb27f5.png)
 
 ## 9. Objetivos de aprendizaje
 
@@ -140,7 +141,8 @@ Se considero como objetivos de aprendizajes lo siguiente:
 Las pruebas unitarias deben dar un X en _coverage_ (cobertura), 100%
 _statements_ (sentencias), 100%  _functions_ (funciones) y _lines_ (líneas); y 83.33% de _branches_ (ramas).
 
-![name] (imagenes_readme\test.png)
+![test](https://user-images.githubusercontent.com/63525613/88968580-257a4c80-d275-11ea-87b9-253d5d7fbaa6.png)
+
 
 ***
 
