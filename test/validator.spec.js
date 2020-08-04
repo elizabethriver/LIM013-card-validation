@@ -17,6 +17,7 @@ describe('validator', () => {
     it('debería retornar false para "4586453673894444"', () => {
       expect(validator.isValid("4586453673894444")).toBe("¡Lo sentimos! No pudimos procesar tu compra, tu tarjeta es incorrecta");
     });
+    
   });
 
   describe('validator.maskify', () => {
@@ -27,5 +28,5 @@ describe('validator', () => {
     it('Debería retornar "############9473" para "4716621483139473"', () => {
       expect(validator.maskify("4716621483139473")).toBe("############9473");
     });
-    });
-  });
+});
+})

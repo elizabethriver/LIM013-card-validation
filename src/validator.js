@@ -34,7 +34,7 @@
   //se utiliza for para cada indice del array final, que se convierte en inter y se agrega a la var sum
         
           for (var j = 0; j < arrayFinal.length; j++) {
-            sum += parseInt (arrayFinal[j]);
+            sum += parseInt (arrayFinal[j], 10);
           }
   //si la var sum, su modulo entre 10 es igual a 0, se valida la tarjeta, en caso contrario, se rechaza
 
