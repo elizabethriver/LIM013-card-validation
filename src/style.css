@@ -1,253 +1,1216 @@
-  /* borde la caja es aplicado de manera universal a toda la pagina*/
+/* borde la caja es aplicado de manera universal a toda la pagina*/
 * {
-    box-sizing: border-box;
-  }
-  /* encabezado de la pagina*/
-  .header {
-    padding:1%;
-    text-align: center;
-    background: rgb(233, 231, 231);
-    width: 100%;
-    height: auto;
-    opacity:0.7;
-  }
-  /* titulo de encabezado de la pagina*/
-  .header h1 {
-      font-size: 150%;
-      margin-top: 1% ;
-  }
-  /* imagen del encabezado*/
-  .header img {
-    float: center;
-    width: 20%;
-    height: 15%;
-    
-  }
-  /*clase del contenido principal*/ 
-  .main {
-    padding:5%;
-    background: rgb(216, 212, 212);
-    width: 100%;
-    max-height: fit-content;
-    margin-top: 1%;
-    opacity:0.9;
-    
-  }
-  /* el estilo de letra de H1*/ 
-  .main H1 {
-    text-align: center;
-    font-size: 150%;
-  }
-  /* el estilo de letra de p*/ 
-  .main p {
-    text-align: center;
-    font-size: 100%; 
-  }
-  /* pie de pagina */
-  .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    text-align: left;
-    font-size: 50%;
-    padding: 1%;
-    opacity:0.7;
-  }
+	box-sizing: border-box;
+}
+/* encabezado de la pagina*/
+header {
+	margin: 0rem 0rem 0rem;
+	height: 50%;
+}
+.header {
+	padding: 3%;
+	text-align: center;
+	background: rgb(233, 231, 231);
+	width: 98%;
+	height: auto;
+	opacity: 0.7;
+	margin: 1rem 1rem 1rem 1rem;
+}
+/* titulo de encabezado de la pagina*/
+.logo {
+	width: 98%;
+	height: auto;
+	margin: 1rem 1rem 1rem 1rem;
+}
+.header h1 {
+	font-size: 150%;
+	margin-top: 1%;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+/* imagen del encabezado*/
+.header img {
+	float: center;
+	width: 20%;
+	height: 15%;
+}
+/*clase del contenido principal*/
+main {
+	padding: 1%;
+	background: rgb(216, 212, 212);
+	width: 98%;
+	height: 100%;
+	margin: 1rem 1rem 1rem 1rem;
+	opacity: 0.9;
+}
+/* el estilo de letra de H1*/
+.main H1 {
+	text-align: center;
+	font-size: 150%;
+	font-family: 'Kumbh Sans', sans-serif;
+}
+/* el estilo de letra de p*/
+.main p {
+	text-align: center;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+/* pie de pagina */
+footer {
+	position: relative;
+	/* left: 0; */
+	/* bottom: 0; */
+	width: 98%;
+	background-color: #4caf50;
+	color: white;
+	text-align: left;
+	font-size: 50%;
+	padding: 1%;
+	opacity: 0.7;
+	margin: 1rem 1rem 1rem 1rem;
+	font-family: 'Open Sans', sans-serif;
+}
 /* pie de pagina enlace */
-  .footer a {
-    color: white; 
-  }  
+.footer a {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 200%;
+	/* height: 1%; */
+	line-height: 78%;
+	margin: 1rem 1rem 3rem 1rem;
+}
+.footer p {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 200%;
+	/* height: 1%; */
+	line-height: 70%;
+	margin: 1rem 1rem 1rem 1rem;
+}
 /*  clase de boton desplegable*/
-  .button {
-    background-color: #4CAF50;
-    color: white;
-    padding:10%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 100%;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: none;
-    border-radius: 15px;
-
-  }
+.button {
+	background-color: #4caf50;
+	color: white;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	font-size: 100%;
+	cursor: pointer;
+	border: none;
+	border-radius: 15px;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 47%;
+}
+.button:hover {
+	background-color: #1a441b;
+	color: white;
+	outline: none;
+}
 /*  clase de centrado de la vista*/
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-/*  clase del cuerpo de la pagina*/ 
-  body {
-    font-family: Arial;
-    padding: 5%;
-    background: #118806;
-    background-image: url("6749.jpg");
-    background-repeat: no-repeat, repeat;
-    background-size: 2500px, 2200px, cover;
-  }
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*  clase del cuerpo de la pagina*/
+body {
+	font-family: Arial;
+	padding: 5%;
+	background: #118806;
+	background-image: url('6749.jpg');
+	background-repeat: no-repeat, repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
+/* mostrar segunda pagina o vista*/
+#mostrar {
+	display: none;
+}
+/* mostrar boton reload*/
+#mostrar1 {
+	display: none;
+}
 
-/* mostrar segunda pagina o vista*/ 
-  #mostrar { 
-    display : none;}
-/* mostrar boton reload*/ 
-  #mostrar1 { 
-  display : none;}
-
-  #mostrar2 { 
-  display : none;}
+#mostrar2 {
+	display: none;
+}
 /* ocultar segunda pagina o vista*/
-  #ocultar { 
-    display : block;}
-  /* el estilo del contenido de la tarjeta*/ 
+#ocultar {
+	display: block;
+}
+/* el estilo del contenido de la tarjeta*/
 
+.creditCardForm {
+	width: 50%;
+	height: auto;
+	background-color: rgb(245, 229, 10);
+	font-size: 90%;
+	overflow: visible;
+	color: black;
+	border-radius: 15px;
+	margin: 1rem 1rem 1rem 26rem;
+}
+/* el estilo del contenido del formulario*/
+.card-container {
+	padding: 3%;
+	position: static;
+	justify-content: center;
+	line-height: 1%;
+	width: auto;
+	height: auto;
+}
+/* el estilo del titulo del contenido de la tarjeta*/
+.card-container h1 {
+	text-align: center;
+	font-size: 150%;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1rem 1rem 1rem 1rem;
+	padding: 4%;
+}
+/* el estilo del contenido de cada parte del formulario*/
+.form-control {
+	margin: 1%;
+	padding: 3%;
+	position: sticky;
+	width: 98%;
+	align-items: center;
+	/* line-height: 79%; */
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	height: 31rem;
+}
 
+/* el estilo del contenido del label del formulario*/
+.form-control label {
+	display: block;
+	margin: 1rem 1rem 1rem 0rem;
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0px;
+	word-spacing: 4px;
+	color: #0e1709;
+	/* font-weight: bold; */
+	text-decoration: none solid rgb(68, 68, 68);
+	font-style: oblique;
+	font-variant: normal;
+	text-transform: none;
+	outline: none;
+}
+/* el estilo del contenido del input del formulario*/
+.form-control input {
+	border: none;
+	border-radius: 10px;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 90%;
+	padding: 2%;
+	width: 50%;
+	outline: none;
+	line-height: 200%;
+	margin: 1rem 0rem 1rem 0rem;
+}
 
-  .creditCardForm {
-    width: 600px;
-    height: 650px; 
-    background-color: rgb(245, 229, 10);
-    font-size: 90%;   
-    overflow: hidden;    
-    color: black;
-    border-radius: 15px;       
-  }
-  /* el estilo del contenido del formulario*/  
-  .card-container {
-    padding: 3%;    
+small {
+	font-size: 70%;
+	padding: 1%;
+	width: 100%;
+}
+/* el estilo del select del formulario*/
+select {
+	display: block;
+	font-size: 82%;
+	font-family: inherit;
+	line-height: 200%;
+	padding: 2%;
+	border: 1px solid #f0f0f0;
+	border-radius: 12px;
+	appearance: none;
+	background-color: #fff;
+	width: 49%;
+	outline-style: none;
+	margin: 1rem 0rem 1rem 0rem;
+	color: gray;
+}
+
+.nombre {
+	right: 2rem;
+	width: 90%;
+	position: relative;
+	margin: 1rem 1rem 1rem 1rem;
+	bottom: 2rem;
+}
+
+.apellido {
+	left: 21rem;
+	width: 90%;
+	position: relative;
+	margin: 1rem 1rem 1rem 1rem;
+	bottom: 36%;
+}
+
+.mes {
+	width: 90%;
+	position: relative;
+	margin: 1rem 1rem 1rem 1rem;
+	right: 4%;
+	bottom: 10rem;
+}
+
+.year {
+	left: 21rem;
+	width: 90%;
+	position: relative;
+	margin: 1rem 0rem 1rem 0rem;
+	bottom: 65%;
+}
+
+.cvv {
+	width: 17%;
+	position: relative;
+	margin: 1rem 0rem 1rem 0rem;
+	bottom: 94%;
+	left: 5rem;
+}
+
+.cvv input {
+	width: 105%;
+	height: 69%;
+}
+
+.cardNumber {
+	width: 88%;
+	position: relative;
+	margin: 1rem 0rem 1rem 0rem;
+	bottom: 18rem;
+	right: 5%;
+}
+.imagenes {
+	width: 36%;
+	position: relative;
+	margin: 1rem 1rem 1rem 1rem;
+	left: 36%;
+	bottom: 33rem;
+}
+
+.buttom1{
+    width: 70%;
+    position: relative;
+    margin: 1rem 0rem 1rem 0rem;
+    left: 9%;
+    bottom: 92%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+.buttom1 button{
+	width: 70%;
+	position: relative;
+	margin: 1rem 0rem 1rem 5rem;
+	left: 9%;
+	bottom: 120%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+.buttom1 button:hover{
+	background-color: #1a441b;
+		color: white;
+		outline: none;
+}
+
+/* el estilo del select option del formulario*/
+select option {
+	color: black;
+}
+/* el estilo del primer child select option del formulario*/
+option:first-child {
+	color: gray;
+}
+
+/* el estilo del boton de validar el formulario*/
+.form-control button {
+	background-color: #4caf50;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 200%;
+	padding: 2%;
+	width: 50%;
+	cursor: pointer;
+	font-family: 'Kumbh Sans', sans-serif;
+	margin: 5%;
+	align-items: center;
+	height: 65%;
+}
+
+/* el estilo de la imagen tarjeta mastercard*/
+.imgMastecard {
+	background-position: -100px 0;
+	width: 80px;
+	height: auto;
+
+	float: right;
+	margin-right: 4%;
+	margin-bottom: 2%;
+}
+/*  el estilo de la imagen tarjeta visa*/
+.imgVisa {
+	background-position: 0 0px;
+	width: 80px;
+	height: auto;
+	float: right;
+	margin-bottom: 2%;
+}
+/*  el estilo de los msj aside*/
+aside {
+	color: #7d807c;
+	font-size: 70%;
+	font-family: inherit;
+}
+/*  el estilo de boton de recarga*/
+.reload {
+	background-color: #858b85;
+	color: white;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 100%;
+	cursor: pointer;
+	border: none;
+	border-radius: 15px;
+	margin-top: 10%;
+}
+.reload:hover {
+	background-color: black;
+	color: white;
+	outline:none;
+}
+
+.cardMsj {
+
+    margin: 1rem 1rem 1rem 28rem;
+    background-color: #4caf50;
+    padding: 2%;
     position: static;
-    justify-content: center ;  
-    
-    line-height: 1%;
-    width: 600px;
-    height: 400px;       
-  }
-  /* el estilo del titulo del contenido de la tarjeta*/  
-  .card-container h1{
-    text-align: center;
-    font-size: 150%;
-    font-weight: bold;
-  } 
-  /* el estilo del contenido de cada parte del formulario*/  
-  .form-control {
-    margin: 0.5%;
-    padding: 5%;
-    position: sticky;
-    width: 100%;
+    justify-content: center;
     align-items: stretch;
     line-height: 1.4em;
-  }
-  /* el estilo del contenido del label del formulario*/   
-  .form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 100%;
-  }
-  /* el estilo del contenido del input del formulario*/     
-  .form-control input {
-    border: none;
-    border-radius: 10px;
-    display: block;
-    font-family: inherit;
-    font-size: 10px;
-    padding: 10px;
-    width: 100%;
-  }
-  /* el estilo del select del formulario*/   
-  select {
-    display: block;
-    font-size: 10px;
-    font-family: inherit;
-    line-height: 1.3;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #f0f0f0;
-    border-radius: 12px;
-    appearance: none;
-    background-color: #fff;  
-  }
- /* el estilo del select option del formulario*/  
-  select option { color: black }
- /* el estilo del primer child select option del formulario*/  
-  option:first-child {
-    color: gray}
-
- /* el estilo del boton de validar el formulario*/  
-  .form-control button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 4px;
+    width: 41%;
     color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 100%;
-    padding: 2%;
-    width: 50%;
-    cursor: pointer;
-    
-    margin-top: 5%;  
-  } 
-
-  /* el estilo de la imagen tarjeta mastercard*/ 
-  .imgMastecard {
-    background-position: -100px 0;
-    width: 80px;
-    height:auto;
-    
-    float: right;
-    margin-right: 4%;
-    margin-bottom: 2%;  
-  }
-  /*  el estilo de la imagen tarjeta visa*/ 
-  .imgVisa {
-    background-position: 0 0px;
-    width: 80px;
-    height:auto;
-    float: right;
-
-    
-    margin-bottom: 2%; 
-  }
-  /*  el estilo de los msj aside*/ 
-  aside {
-    color: #7d807c;
-    font-size: 70%;
-    font-family: inherit;
-  }
-  /*  el estilo de boton de recarga*/ 
-  .reload {
-    background-color: #858b85;
-    color: white;
-    padding:1%;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-    font-size: 100%;    
-    cursor: pointer;
     border: none;
     border-radius: 15px;
-    margin-top: 10%;
-  }
 
-  .cardMsj {
-    margin-top: 15%;
-    background-color:  #4CAF50;
-    padding: 2%;    
-    position: static;
-    justify-content: center ;  
-    align-items: stretch;
-    line-height: 1.4em;
+}
+
+@media only screen and (max-width: 400px) {
+	.logo {
+		width: 100%;
+		height: auto;
+		margin: 1rem 1rem 1rem 0rem;
+	}
+	.logo img {
+		width: 50%;
+	}
+	.header {
+	    margin: 1rem 1rem 1rem 0rem;
     width: 100%;
-    color: white;
-    border: none;
-    border-radius: 15px;     
-  }
+    padding: 3%;
+	}
+	.header h1 {
+		font-size: 100%;
+	}
 
+	.main {
+		margin: 1rem 1rem 1rem 0rem;
+		height: auto;
+		width: 100%;
+	}
+	.main h1 {
+		font-size: 90%;
+	}
+	.main p {
+		font-size: 86%;
+		margin: 5%;
+	}
+	footer {
+		margin: 1rem 1rem 1rem 0rem;
+		width: 100%;
+	}
+	.footer p {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.footer a {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.button {
+		margin: 3rem 7rem 1rem 6rem;
+		font-size: 100%;
+		padding: 3%;
+	}
+	.creditCardForm {
+		margin: 1rem 1rem 1rem 1rem;
+		width: auto;
+		height: 100%;
+	}
+	.form-control {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		height: auto;
+		width: auto;
+	}
+	.form-control input {
+		border: none;
+		border-radius: 10px;
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-size: 90%;
+		padding: 2%;
+		width: 92%;
+		outline: none;
+		line-height: 200%;
+		margin: 1rem 0rem 1rem 0rem;
+	}
+	.card-container {
+		padding: 2%;
+		position: relative;
+		justify-content: center;
+		line-height: 10%;
+		width: auto;
+		height: auto;
+		margin: 1rem 1rem 1rem 1rem;
+	}
+	.nombre {
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 2rem;
+		left: 1%;
+	}
+	.apellido {
+		left: 1%;
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 3rem;
+	}
+	.mes {
+		width: 74%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: -11%;
+		bottom: 4rem;
+	}
+	.year {
+		left: 6rem;
+		width: 90%;
+		position: relative;
+		margin: 1rem 0rem 1rem 0rem;
+		bottom: 12.5em;
+	}
+	.cardNumber {
+		width: 88%;
+		position: relative;
+		margin: 1rem 0rem 1rem 0rem;
+		bottom: 12rem;
+		right: 4%;
+	}
+	.cvv {
+		width: 37%;
+		position: relative;
+		margin: 1rem 18rem 4rem 1rem;
+		bottom: 13rem;
+	}
 
-  
+	.cvv input {
+		width: 105%;
+		height: 48%;
+	}
+
+	.buttom1 {
+		right: 10%;
+		bottom: 90%;
+		width: 100%;
+		position: relative;
+		margin: -20rem 1rem 1rem 4rem;
+		font-family: 'Roboto', sans-serif;
+		font-size: 100%;
+		
+	}
+
+	.buttom1:hover {
+		background-color: #1a441b;
+		color: white;
+		outline: none;
+	}
+	.form-control button {
+		background-color: #4caf50;
+		border: none;
+		border-radius: 4px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 100%;
+		padding: 2%;
+		width: 50%;
+		cursor: pointer;
+		font-family: 'Kumbh Sans', sans-serif;
+		margin: 5%;
+		align-items: center;
+		height: 65%;
+	}
+	.imagenes {
+		flex-direction: column;
+		width: 64%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: 36%;
+		bottom: 23rem;
+	
+	}
+	.imgMastecard {
+		background-position: -100px 0;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-right: 4%;
+		margin-bottom: 2%;
+	}
+	.imgVisa {
+		background-position: 0 0px;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-bottom: 2%;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+	.logo {
+		width: 100%;
+		height: auto;
+		margin: 1rem 1rem 1rem 0rem;
+	}
+	.logo img {
+		width: 50%;
+	}
+	.header {
+	    margin: 1rem 1rem 1rem 1rem;
+    width: auto;
+	}
+	
+	.header h1 {
+		font-size: 150%;	}
+
+	.main {
+		margin: 1rem 1rem 1rem 1rem;
+		height: auto;
+		width: auto;
+	}
+	.main h1 {
+		font-size: 150%;
+	}
+	.main p {
+		font-size: 100%;
+		margin: 5%;
+	}
+	.creditCardForm h1{
+		font-size: 100%;
+	}
+	footer {
+		margin: 1rem 1rem 1rem 1rem;
+		width: auto;
+	}
+	.footer p {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.footer a {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.button {
+		margin: 3rem 7rem 1rem 6rem;
+		font-size: 100%;
+		padding: 3%;
+	}
+	.creditCardForm {
+		margin: 1rem 1rem 1rem 1rem;
+		width: auto;
+		height: 100%;
+	}
+	.form-control {
+		display: block;
+		height: auto;
+		width: auto;
+	}
+	.form-control input {
+		border: none;
+		border-radius: 10px;
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-size: 90%;
+		padding: 2%;
+		width: 92%;
+		outline: none;
+		line-height: 200%;
+		margin: 1rem 0rem 1rem 0rem;
+	}
+	.form-control label {
+		display: block;
+		margin: 1rem 1rem 1rem 0rem;
+		font-size: 98%;
+		font-family: 'Roboto', sans-serif;
+		letter-spacing: 0px;
+		word-spacing: 4px;
+		color: #0e1709;
+		/* font-weight: bold; */
+		text-decoration: none solid rgb(68, 68, 68);
+		font-style: oblique;
+		font-variant: normal;
+		text-transform: none;
+		outline: none;
+	}
+	.card-container {
+		padding: 2%;
+		position: relative;
+		justify-content: center;
+		line-height: 100%;
+		width: auto;
+		height: 54em;
+		margin: 1rem 1rem 1rem 1rem;
+	
+	}
+	.nombre {
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 2rem;
+		left: 1%;
+	}
+	.apellido {
+		left: 1%;
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 1rem;
+	}
+	.mes {
+		width: 74%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: 0%;
+		bottom: 0rem;
+	}
+	.year {
+		left: 8em;
+		width: 90%;
+		position: relative;
+		margin: 1rem 0rem 1rem 0rem;
+		bottom: 7rem;
+	}
+	.cardNumber {
+		width: 97%;
+		position: relative;
+		margin: 1rem 0rem 1rem 2rem;
+		bottom: 6rem;
+	}
+
+	.cvv {
+		width: 37%;
+		position: relative;
+		margin: 1rem 2rem 0rem 4rem;
+		bottom: 5rem;
+		left: -3rem;
+	}
+
+	.cvv input {
+		width: 105%;
+		height: 4em;
+	}
+
+	.buttom1 {
+		left: 0rem;
+		bottom: 11rem;
+		width: 100%;
+		position: relative;
+		font-family: 'Roboto', sans-serif;
+		font-size: 100%;
+		margin: 1rem 1rem 1rem 1rem;
+	}
+
+	.buttom1:hover {
+		background-color: #1a441b;
+		color: white;
+		outline: none;
+	}
+	.form-control button {
+		background-color: #4caf50;
+		border: none;
+		border-radius: 4px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 200%;
+		padding: 2%;
+		width: 66%;
+		cursor: pointer;
+		font-family: 'Kumbh Sans', sans-serif;
+		margin: 5%;
+		align-items: center;
+		height: 65%;
+	}
+	small {
+		font-size: 80%;
+		padding: 1%;
+		width: 100%;
+	}
+	.imagenes {
+		flex-direction: column;
+		width: 58%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: 52%;
+		bottom: 13rem;
+	}
+
+	.imgMastecard {
+		background-position: -100px 0;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-right: 4%;
+		margin-bottom: 2%;
+	}
+	.imgVisa {
+		background-position: 0 0px;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-bottom: 2%;
+	}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+	.logo {
+		width: 100%;
+		height: auto;
+		margin: 1rem 1rem 1rem 0rem;
+	}
+	.logo img {
+		width: 50%;
+	}
+	.header {
+		margin: 1rem 1rem 1rem 1rem;
+		width: auto;
+	}
+	.header h1 {
+		font-size: 200%;
+	}
+
+	.main {
+		margin: 1rem 1rem 1rem 1rem;
+		height: auto;
+		width: auto;
+	}
+	.main h1 {
+		font-size: 200%;
+	}
+	.main p {
+		font-size: 150%;
+		margin: 5%;
+	}
+	footer {
+		margin: 1rem 1rem 1rem 1rem;
+		width: 95%;
+	}
+	.footer p {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.footer a {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.button {
+		margin: 3rem 7rem 1rem 6rem;
+		font-size: 100%;
+		padding: 3%;
+	}
+	.creditCardForm {
+		margin: 1rem 1rem 1rem 1rem;
+		width: auto;
+		height: 100%;
+	}
+	.form-control {
+		display: block;
+		height: auto;
+		width: auto;
+	}
+	.form-control input {
+		border: none;
+		border-radius: 10px;
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-size: 90%;
+		padding: 2%;
+		width: 92%;
+		outline: none;
+		line-height: 200%;
+		margin: 1rem 0rem 1rem 0rem;
+	}
+	.form-control label {
+		display: block;
+		margin: 1rem 1rem 1rem 0rem;
+		font-size: 150%;
+		font-family: 'Roboto', sans-serif;
+		letter-spacing: 0px;
+		word-spacing: 4px;
+		color: #0e1709;
+		/* font-weight: bold; */
+		text-decoration: none solid rgb(68, 68, 68);
+		font-style: oblique;
+		font-variant: normal;
+		text-transform: none;
+		outline: none;
+	}
+	.card-container {
+		padding: 2%;
+		position: relative;
+		justify-content: center;
+		line-height: 10%;
+		width: auto;
+		height: auto;
+		margin: 1rem 1rem 1rem 1rem;
+	}
+	.nombre {
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 2rem;
+		left: 1%;
+	}
+	.apellido {
+		left: 1%;
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 3rem;
+	}
+	.mes {
+		width: 74%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: -11%;
+		bottom: 4rem;
+	}
+	.year {
+		left: 21em;
+		width: 90%;
+		position: relative;
+		margin: 1rem 0rem 1rem 0rem;
+		bottom: 13em;
+	}
+
+	.cardNumber {
+		width: 97%;
+		position: relative;
+		margin: 1rem 0rem 1rem 4rem;
+		bottom: 12rem;
+		right: 5%;
+	}
+
+	.cvv {
+		width: 37%;
+		position: relative;
+		margin: 1rem 37rem 4rem 1rem;
+		bottom: 13rem;
+	}
+
+	.cvv input {
+		width: 105%;
+		height: 4em;
+	}
+
+	.buttom1 {
+		right: 10%;
+		bottom: 90%;
+		width: 100%;
+		position: relative;
+
+		font-family: 'Roboto', sans-serif;
+		font-size: 100%;
+		margin: -24rem 1rem 1rem 4rem;
+	}
+
+	.buttom1:hover {
+		background-color: #1a441b;
+		color: white;
+		outline: none;
+	}
+	.form-control button {
+		background-color: #4caf50;
+		border: none;
+		border-radius: 4px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 200%;
+		padding: 2%;
+		width: 66%;
+		cursor: pointer;
+		font-family: 'Kumbh Sans', sans-serif;
+		margin: 5%;
+		align-items: center;
+		height: 65%;
+	}
+	small {
+		font-size: 80%;
+		padding: 1%;
+		width: 100%;
+	}
+	.imagenes {
+		flex-direction: column;
+		width: 22%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: 36%;
+		bottom: 25rem;
+	}
+
+	.imgMastecard {
+		background-position: -100px 0;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-right: 4%;
+		margin-bottom: 2%;
+	}
+	.imgVisa {
+		background-position: 0 0px;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-bottom: 2%;
+	}
+}
+
+@media only screen and (min-width: 1201) {
+	.logo {
+		width: 100%;
+		height: auto;
+		margin: 1rem 1rem 1rem 0rem;
+	}
+	.logo img {
+		width: 50%;
+	}
+	.header {
+		margin: 1rem 1rem 1rem 1rem;
+		width: auto;
+	}
+	.header h1 {
+		font-size: 200%;
+	}
+
+	.main {
+		margin: 1rem 1rem 1rem 1rem;
+		height: auto;
+		width: auto;
+	}
+	.main h1 {
+		font-size: 200%;
+	}
+	.main p {
+		font-size: 150%;
+		margin: 5%;
+	}
+	footer {
+		margin: 1rem 1rem 1rem 1rem;
+		width: 95%;
+	}
+	.footer p {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.footer a {
+		margin: 0rem 0rem 0rem 0rem;
+		font-size: 100%;
+		padding: 1%;
+	}
+	.button {
+		margin: 3rem 7rem 1rem 6rem;
+		font-size: 100%;
+		padding: 3%;
+	}
+	.creditCardForm {
+		margin: 1rem 1rem 1rem 1rem;
+		width: auto;
+		height: 100%;
+	}
+	.form-control {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		height: auto;
+		width: auto;
+	}
+	.form-control input {
+		border: none;
+		border-radius: 10px;
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-size: 90%;
+		padding: 2%;
+		width: 92%;
+		outline: none;
+		line-height: 200%;
+		margin: 1rem 0rem 1rem 0rem;
+	}
+	.form-control label {
+		display: block;
+		margin: 1rem 1rem 1rem 0rem;
+		font-size: 150%;
+		font-family: 'Roboto', sans-serif;
+		letter-spacing: 0px;
+		word-spacing: 4px;
+		color: #0e1709;
+		/* font-weight: bold; */
+		text-decoration: none solid rgb(68, 68, 68);
+		font-style: oblique;
+		font-variant: normal;
+		text-transform: none;
+		outline: none;
+	}
+	.card-container {
+		padding: 2%;
+		position: relative;
+		justify-content: center;
+		line-height: 10%;
+		width: auto;
+		height: auto;
+		margin: 1rem 1rem 1rem 1rem;
+	}
+	.nombre {
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 2rem;
+		left: 1%;
+	}
+	.apellido {
+		left: 1%;
+		width: 100%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 3rem;
+	}
+	.mes {
+		width: 74%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: -11%;
+		bottom: 4rem;
+	}
+	.year {
+		left: 15em;
+		width: 90%;
+		position: relative;
+		margin: 1rem 0rem 1rem 0rem;
+		bottom: 13em;
+	}
+	.cardNumber {
+		width: 97%;
+		position: relative;
+		margin: 1rem 0rem 1rem 4rem;
+		bottom: 12rem;
+		right: 5%;
+	}
+
+	.cvv {
+		width: 37%;
+		position: relative;
+		margin: 1rem 28rem 4rem 1rem;
+		bottom: 13rem;
+	}
+
+	.cvv input {
+		width: 105%;
+		height: 4em;
+	}
+
+	.buttom1 {
+		right: 10%;
+		bottom: 90%;
+		width: 100%;
+		position: relative;
+
+		font-family: 'Roboto', sans-serif;
+		font-size: 100%;
+		margin: -24rem 1rem 1rem 4rem;
+	}
+
+	.buttom1:hover {
+		background-color: #1a441b;
+		color: white;
+		outline: none;
+	}
+	.form-control button {
+		background-color: #4caf50;
+		border: none;
+		border-radius: 4px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 200%;
+		padding: 2%;
+		width: 66%;
+		cursor: pointer;
+		font-family: 'Kumbh Sans', sans-serif;
+		margin: 5%;
+		align-items: center;
+		height: 65%;
+	}
+	small {
+		font-size: 80%;
+		padding: 1%;
+		width: 100%;
+	}
+	.imagenes {
+		flex-direction: column;
+		width: 33%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		left: 27%;
+		bottom: 26rem;
+	}
+
+	.imgMastecard {
+		background-position: -100px 0;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-right: 4%;
+		margin-bottom: 2%;
+	}
+	.imgVisa {
+		background-position: 0 0px;
+		width: 100%;
+		height: auto;
+		float: right;
+		margin-bottom: 2%;
+	}
+}

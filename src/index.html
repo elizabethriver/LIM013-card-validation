@@ -1,128 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <!---pestaña de la pagina con icono y estilo css --->
-  <head>
-    <meta charset="utf-8">
-    <title>Verifica tu tarjeta (EMPODÉRATE)</title>
-    <link rel="shortcut icon" href="plant.png">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-<!---Cuerpo de la pagina --->    
-  <body>
-<!---Titulo de la pagina --->    
-    <header>
-<!---Titulo de la pagina --->    
-      <div class="header">
-        <img src="Agromujer-removebg-preview.png" alt="logo" />
-        <h1>"Insumos agrícolas para la mujer campesina"</h1>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Verifica tu tarjeta (EMPODÉRATE)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="plant.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Lato&family=Open+Sans&family=Roboto&display=swap"
+    rel="stylesheet">
+</head>
+<!---Cuerpo de la pagina --->
+
+<body>
+  <!---Titulo de la pagina --->
+  <header class="header">
+    <!---Titulo de la pagina --->
+    <figure class="logo">
+      <img src="Agromujer-removebg-preview.png" alt="logo" />
+    </figure>
+    <h1>"Insumos agrícolas para la mujer campesina"</h1>
+  </header>
+  <!---contenido de la pagina --->
+  <main class="main">
+    <section class="ocultar">
+      <h1 id="h1" class="ocultar">Procesa tu compra</h1>
+      <p id="saludos" class="ocultar"></p>
+      <p id="p" class="ocultar"></p>
+      <div class="ocultar">
+        <button class="button" type="button" id="button1">Continuar</button>
       </div>
-    </header>
-<!---contenido de la pagina --->            
-    <main >
-      <div class="main">     
-          <h1 id="h1" class="ocultar">Procesa tu compra</h1>
-          <p id="saludos" class="ocultar"></p>
-          <p id="p" class="ocultar"></p>   
-        <div class="center">
-          <div class="ocultar">
-            <button class="button" type="button" id= "button1">Continuar</button>
-          </div>
-<!---despliegue de tarjeta o formulario --->           
-          <div id= "mostrar">                                  
-            <div id ="ocultar3" class ="ocultar">           
-              <div class="creditCardForm">              
-                <form id="myForm" class= "card-container" name="myForm">
-                <h1>Tus datos de pago</h1>
-                <div class="form-control">
-                      <label for="name">Nombre del titular</label>
-                      <input type="text" name="name" placeholder="Nombre" pattern="[A-Za-z]{2,}" id="name" title= "Incorpora el nombre del titular de tu tarjeta" required>      
-                      <aside>Ejemplo: Elizabeth</aside>
-                    
+      <!---despliegue de tarjeta o formulario --->
+      <section id="mostrar">
+        <section id="ocultar3" class="ocultar">
+          <section class="creditCardForm">
+            <form id="myForm" class="card-container" name="myForm">
+              <h1>Tus datos de pago</h1>
+              <section class="form-control">
+                <section class="nombre">
+                  <label for="name">Nombre del titular</label>
+                  <input type="text" name="name" placeholder="Nombre" pattern="[A-Za-z]{2,}" id="name"
+                    title="Incorpora el nombre del titular de tu tarjeta" required />
+                  <small>Ejemplo: Elizabeth</small>
+                </section>
+                <section class="apellido">
+                  <label for="lastName">Apellido del titular</label>
+                  <input type="text" name="lastName" placeholder="Apellido" pattern="[A-Za-z]{2,}" id="lastName"
+                    title="Apellido registrado en la tarjeta" required />
+                  <small>Ejemplo: Rivera</small>
+                </section>
+                <section class="mes"> 
+                  <label for="mes">Mes</label>
+                  <select id="mes" class="select" required>
+                    <option value="">Mes</option>
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                  </select>
+                  <small>Ejemplo: Enero</small>
+                </section>
+                <section class="year">
+                  <label for="año">Año</label>
+                  <select id="año" class="select" required>
+                    <option value="">Año</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                  </select>
+                  <small>Ejemplo: 2020</small>
+                </section>
+                <section class="cardNumber">
+                  <label for="cardNumber">Número de tarjeta</label>
+                  <input type="text" name="cardNumber" placeholder="XXXXXXXXXXXXXXXX" pattern="[0-9]{16}" id="cardNumber"
+                    title="Son los 16 digitos que aparece en tu tarjeta" required />
+                  <small>Ejemplo: 5000000000000000</small>
+                </section>
+                <section class="cvv">
+                  <label for="CVV">CVV</label>
+                  <input type="text" name="CVV" placeholder="CVV" pattern="[0-9]{3}" id="CVV"
+                    title="Los tres ultimos digitos al reverso de tu tarjeta" required />
+                  <small>Ejemplo: 345</small>
+                </section>
+                <section class="imagenes">
+                  <figure>
+                    <img class="imgVisa" src="credit-card-visa.png" alt="visa" />
+                  </figure>
+                  <figure>
+                    <img class="imgMastecard" src="mastercard.png" alt="mastercard" />
+                  </figure>
+                  <!---boton de validacion de tarjeta o formulario --->
+                </section>
+                <section class="buttom1">
+                  <button  class="myForm" type="submit" id="button2">
+                    Validar
+                  </button>
+                </section>
                 
-                      <label for="lastName">Apellido del titular</label>
-                      <input type="text" name="lastName" placeholder= "Apellido" pattern="[A-Za-z]{2,}" id="lastName" title="Apellido registrado en la tarjeta" required>       
-                      <aside>Ejemplo: Rivera</aside>
-                
-                
-                      <label for="mes">Mes de expedición</label>
-                    <div class="select">
-                      <select id="mes" required>
-                        <option value="">Mes</option>    
-                        <option value="enero">Enero</option>
-                        <option value="febrero">Febrero</option>
-                        <option value="marzo">Marzo</option>
-                        <option value="abril">Abril</option>
-                        <option value="mayo">Mayo</option>
-                        <option value="junio">Junio</option>
-                        <option value="julio">Julio</option>
-                        <option value="agosto">Agosto</option>
-                        <option value="septiembre">Septiembre</option>
-                        <option value="octubre">Octubre</option>
-                        <option value="noviembre">Noviembre</option>
-                        <option value="diciembre">Diciembre</option>
-                      </select>
-                        <aside>Ejemplo: Enero</aside>
-                    </div>
-                
-                      
-                        <label for="año">Año de expedición</label>
-                    <div class="select">
-                      <select id="año" required>
-                        <option value="">Año</option>    
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                      </select>
-                        <aside>Ejemplo: 2020</aside>
-                    </div>
-                                     
-                
-                      <label for="CVV">CVV</label>
-                      <input type="text" name="CVV" placeholder= "CVV" pattern="[0-9]{3}" id="CVV" title="Los tres ultimos digitos al reverso de tu tarjeta" required> 
-                      <aside>Ejemplo: 345</aside>
-                
-                
-                      <label for="cardNumber">Número de tarjeta</label>
-                      <input type="text" name="cardNumber" placeholder="XXXXXXXXXXXXXXXX" pattern="[0-9]{16}"  id="cardNumber" title="Son los 16 digitos que aparece en tu tarjeta" required>            
-                      <aside>Ejemplo: 5000000000000000</aside>
-                                                      
-                <img class="imgVisa" src="credit-card-visa.png" alt="visa">              
-                <img class="imgMastecard" src="mastercard.png" alt="mastercard">
-                
-<!---boton de validacion de tarjeta o formulario --->  
-                  <button class="myForm" type="submit" id= "button2">Validar</button>
-                </div>                                          
-                </form>
-              </div>
-            </div>                                       
-          </div>
-<!---despliegue de msj de validacion o no del número de tarjeta --->  
-          <div id="mostrar2">
-            <div id="cardMsj"> 
-              <h1 id="msjFinal"></h1>
-              <p id="validación"></p>
-              <p id="msj"></p>  
-            </div>
-          </div>
-        
-        </div>
-<!---botonde reinicio de página --->  
-        <div id= "mostrar1">
-          <button class= "reload" type="button" id="reload" >Volver</button> 
-        </div>
-                     
-      </div>
-    </main>     
-    <footer>
-      <div class="footer">
-        <p>Copyright "Mujeres empoderadas" <a href="mailto:mujeresempoder@gop.pe">e-mail: mujeresempoder@gop.pe</a></p>        
-      </div>       
-    </footer>
-  </body>
-  <script src="index.js" type="module"></script>
+              </section>
+            </form>
+          </section>
+        </section>
+      </section>
+      <!---despliegue de msj de validacion o no del número de tarjeta --->
+      <section id="mostrar2">
+        <section id="cardMsj">
+          <h1 id="msjFinal"></h1>
+          <p id="validación"></p>
+          <p id="msj"></p>
+        </section>
+      </section>
+      <!---botonde reinicio de página --->
+      <section id="mostrar1">
+        <button class="reload" type="button" id="reload">Volver</button>
+      </section>
+  </main>
+  <footer class="footer">
+    <p>
+      Copyright "Mujeres empoderadas"
+    </p>
+    <a href="mailto:mujeresempoder@gop.pe">e-mail: mujeresempoder@gop.pe</a>
+  </footer>
+</body>
+<script src="index.js" type="module"></script>
+
 </html>
