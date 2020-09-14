@@ -143,23 +143,24 @@ body {
 /* el estilo del contenido de la tarjeta*/
 
 .creditCardForm {
-	width: 50%;
-	height: auto;
-	background-color: rgb(245, 229, 10);
-	font-size: 90%;
-	overflow: visible;
-	color: black;
-	border-radius: 15px;
-	margin: 1rem 1rem 1rem 26rem;
+    width: auto;
+    height: 56rem;
+    background-color: rgb(245, 229, 10);
+    font-size: 90%;
+    overflow: visible;
+    color: black;
+    border-radius: 15px;
+    margin: 1rem 30rem 1rem 29rem;
+    justify-content: center;
 }
 /* el estilo del contenido del formulario*/
 .card-container {
 	padding: 3%;
-	position: static;
-	justify-content: center;
-	line-height: 1%;
-	width: auto;
-	height: auto;
+    position: relative;
+    justify-content: center;
+    line-height: 1%;
+    width: auto;
+    height: auto;
 }
 /* el estilo del titulo del contenido de la tarjeta*/
 .card-container h1 {
@@ -172,128 +173,118 @@ body {
 }
 /* el estilo del contenido de cada parte del formulario*/
 .form-control {
-	margin: 1%;
-	padding: 3%;
-	position: sticky;
-	width: 98%;
-	align-items: center;
-	/* line-height: 79%; */
-	display: flex;
-	flex-wrap: nowrap;
-	flex-direction: column;
-	height: 31rem;
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 3%;
+    position: relative;
+    width: 89%;
+    align-items: normal;
+    line-height: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
 }
 
 /* el estilo del contenido del label del formulario*/
 .form-control label {
-	display: block;
-	margin: 1rem 1rem 1rem 0rem;
-	font-size: 100%;
-	font-family: 'Roboto', sans-serif;
-	letter-spacing: 0px;
-	word-spacing: 4px;
-	color: #0e1709;
-	/* font-weight: bold; */
-	text-decoration: none solid rgb(68, 68, 68);
-	font-style: oblique;
-	font-variant: normal;
-	text-transform: none;
-	outline: none;
+    display: block;
+    margin: 1rem 1rem 1rem 0rem;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    word-spacing: 4px;
+    color: #0e1709;
+    /* font-weight: bold; */
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: oblique;
+    font-variant: normal;
+    text-transform: none;
+    outline: none;
 }
 /* el estilo del contenido del input del formulario*/
 .form-control input {
 	border: none;
-	border-radius: 10px;
-	display: block;
-	font-family: 'Roboto', sans-serif;
-	font-size: 90%;
-	padding: 2%;
-	width: 50%;
-	outline: none;
-	line-height: 200%;
-	margin: 1rem 0rem 1rem 0rem;
+    border-radius: 10px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;
+    padding: 2%;
+    width: 100%;
+    outline: none;
+    line-height: 200%;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
-small {
+.form-control small {
 	font-size: 70%;
-	padding: 1%;
-	width: 100%;
+    padding: 1%;
+    width: 100%;
+    margin: 0rem 0rem 1rem 0rem;
 }
 /* el estilo del select del formulario*/
-select {
+.selectMes {
 	display: block;
 	font-size: 82%;
 	font-family: inherit;
-	line-height: 200%;
+	line-height: 2rem;
 	padding: 2%;
 	border: 1px solid #f0f0f0;
 	border-radius: 12px;
 	appearance: none;
 	background-color: #fff;
-	width: 49%;
+	width: 100%;
+	outline-style: none;
+	margin: 1rem 0rem 1rem 0rem;
+	color: gray;
+}
+.selectYear {
+	display: block;
+	font-size: 82%;
+	font-family: inherit;
+	line-height: 2rem;
+	padding: 2%;
+	border: 1px solid #f0f0f0;
+	border-radius: 12px;
+	appearance: none;
+	background-color: #fff;
+	width: 100%;
 	outline-style: none;
 	margin: 1rem 0rem 1rem 0rem;
 	color: gray;
 }
 
+
 .nombre {
-	right: 2rem;
-	width: 90%;
-	position: relative;
-	margin: 1rem 1rem 1rem 1rem;
-	bottom: 2rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .apellido {
-	left: 21rem;
-	width: 90%;
-	position: relative;
-	margin: 1rem 1rem 1rem 1rem;
-	bottom: 36%;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .mes {
-	width: 90%;
-	position: relative;
 	margin: 1rem 1rem 1rem 1rem;
-	right: 4%;
-	bottom: 10rem;
+    width: 50%;
 }
 
 .year {
-	left: 21rem;
-	width: 90%;
-	position: relative;
-	margin: 1rem 0rem 1rem 0rem;
-	bottom: 65%;
+	margin: -7rem 1rem 1rem 20rem;
+    width: 50%;
 }
 
 .cvv {
-	width: 17%;
-	position: relative;
-	margin: 1rem 0rem 1rem 0rem;
-	bottom: 94%;
-	left: 5rem;
-}
-
-.cvv input {
-	width: 105%;
-	height: 69%;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 .cardNumber {
-	width: 88%;
-	position: relative;
-	margin: 1rem 0rem 1rem 0rem;
-	bottom: 18rem;
-	right: 5%;
+    margin: 1rem 1rem 1rem 1rem;
 }
 .imagenes {
-	width: 36%;
-	position: relative;
-	margin: 1rem 1rem 1rem 1rem;
-	left: 36%;
-	bottom: 33rem;
+    width: 36%;
+    position: relative;
+    margin: 1rem 1rem 1rem 1rem;
+    left: 59%;
+    bottom: 1rem;
 }
 
 .buttom1{
@@ -305,16 +296,7 @@ select {
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
 }
-.buttom1 button{
-	width: 70%;
-	position: relative;
-	margin: 1rem 0rem 1rem 5rem;
-	left: 9%;
-	bottom: 120%;
-	font-family: 'Roboto', sans-serif;
-	font-size: 100%;
-}
-.buttom1 button:hover{
+button:hover{
 	background-color: #1a441b;
 		color: white;
 		outline: none;
@@ -331,20 +313,22 @@ option:first-child {
 
 /* el estilo del boton de validar el formulario*/
 .form-control button {
-	background-color: #4caf50;
-	border: none;
-	border-radius: 4px;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	font-size: 200%;
-	padding: 2%;
-	width: 50%;
-	cursor: pointer;
-	font-family: 'Kumbh Sans', sans-serif;
-	margin: 5%;
-	align-items: center;
-	height: 65%;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 179%;
+    padding: 2%;
+    width: 50%;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 5%;
+    align-items: center;
+    height: 74%;
+    position: relative;
+    bottom: 9rem;
 }
 
 /* el estilo de la imagen tarjeta mastercard*/
@@ -465,7 +449,7 @@ aside {
 		display: flex;
 		flex-wrap: nowrap;
 		flex-direction: column;
-		height: auto;
+		height: 45rem;
 		width: auto;
 	}
 	.form-control input {
@@ -504,31 +488,29 @@ aside {
 		bottom: 3rem;
 	}
 	.mes {
-		width: 74%;
-		position: relative;
-		margin: 1rem 1rem 1rem 1rem;
-		left: -11%;
-		bottom: 4rem;
-	}
-	.year {
-		left: 6rem;
 		width: 90%;
 		position: relative;
-		margin: 1rem 0rem 1rem 0rem;
-		bottom: 12.5em;
+		margin: 1rem 1rem 1rem 1rem;
+		/* left: 1%; */
+		bottom: 4rem;
+	}
+	.year { 
+		width: 90%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 5em;
 	}
 	.cardNumber {
 		width: 88%;
 		position: relative;
-		margin: 1rem 0rem 1rem 0rem;
-		bottom: 12rem;
-		right: 4%;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 6rem;
 	}
 	.cvv {
 		width: 37%;
 		position: relative;
-		margin: 1rem 18rem 4rem 1rem;
-		bottom: 13rem;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 6rem;
 	}
 
 	.cvv input {
@@ -547,7 +529,7 @@ aside {
 		
 	}
 
-	.buttom1:hover {
+	button:hover {
 		background-color: #1a441b;
 		color: white;
 		outline: none;
@@ -567,14 +549,15 @@ aside {
 		margin: 5%;
 		align-items: center;
 		height: 65%;
+		bottom: 13rem;
 	}
 	.imagenes {
 		flex-direction: column;
 		width: 64%;
 		position: relative;
 		margin: 1rem 1rem 1rem 1rem;
-		left: 36%;
-		bottom: 23rem;
+		left: 45%;
+		bottom: 13rem;
 	
 	}
 	.imgMastecard {
@@ -668,9 +651,10 @@ aside {
 		margin: 1rem 0rem 1rem 0rem;
 	}
 	.form-control label {
-		display: block;
-		margin: 1rem 1rem 1rem 0rem;
-		font-size: 98%;
+		display: flex;
+		margin: 1rem 11rem 1rem 1rem;
+		/* right: 3em; */
+		font-size: 100%;
 		font-family: 'Roboto', sans-serif;
 		letter-spacing: 0px;
 		word-spacing: 4px;
@@ -681,6 +665,7 @@ aside {
 		font-variant: normal;
 		text-transform: none;
 		outline: none;
+		justify-content: flex-start;
 	}
 	.card-container {
 		padding: 2%;
@@ -750,7 +735,7 @@ aside {
 		margin: 1rem 1rem 1rem 1rem;
 	}
 
-	.buttom1:hover {
+	button:hover {
 		background-color: #1a441b;
 		color: white;
 		outline: none;
@@ -956,7 +941,7 @@ aside {
 		margin: -24rem 1rem 1rem 4rem;
 	}
 
-	.buttom1:hover {
+	button:hover {
 		background-color: #1a441b;
 		color: white;
 		outline: none;

@@ -51,9 +51,9 @@
                     title="Apellido registrado en la tarjeta" required />
                   <small>Ejemplo: Rivera</small>
                 </section>
-                <section class="mes"> 
+                <section class="mes">
                   <label for="mes">Mes</label>
-                  <select id="mes" class="select" required>
+                  <select id="mes" class="selectMes" required>
                     <option value="">Mes</option>
                     <option value="enero">Enero</option>
                     <option value="febrero">Febrero</option>
@@ -72,7 +72,7 @@
                 </section>
                 <section class="year">
                   <label for="año">Año</label>
-                  <select id="año" class="select" required>
+                  <select id="año" class="selectYear" required>
                     <option value="">Año</option>
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
@@ -96,21 +96,22 @@
                   <input type="text" name="CVV" placeholder="CVV" pattern="[0-9]{3}" id="CVV"
                     title="Los tres ultimos digitos al reverso de tu tarjeta" required />
                   <small>Ejemplo: 345</small>
-                </section>
+                </section>             
                 <section class="imagenes">
                   <figure>
                     <img class="imgVisa" src="credit-card-visa.png" alt="visa" />
                   </figure>
                   <figure>
                     <img class="imgMastecard" src="mastercard.png" alt="mastercard" />
-                  </figure>
-                  <!---boton de validacion de tarjeta o formulario --->
+                  </figure>                  
                 </section>
-                <section class="buttom1">
+
+                  <!-- boton de validacion de tarjeta o formulario -->
+                
+               
                   <button  class="myForm" type="submit" id="button2">
                     Validar
                   </button>
-                </section>
                 
               </section>
             </form>
