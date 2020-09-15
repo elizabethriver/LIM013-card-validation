@@ -535,21 +535,23 @@ aside {
 		outline: none;
 	}
 	.form-control button {
+
 		background-color: #4caf50;
 		border: none;
 		border-radius: 4px;
 		color: white;
 		text-align: center;
 		text-decoration: none;
-		font-size: 100%;
+		font-size: 150%;
 		padding: 2%;
-		width: 50%;
+		width: 91%;
 		cursor: pointer;
 		font-family: 'Kumbh Sans', sans-serif;
 		margin: 5%;
 		align-items: center;
 		height: 65%;
-		bottom: 13rem;
+		bottom: 14rem;
+	
 	}
 	.imagenes {
 		flex-direction: column;
@@ -587,31 +589,29 @@ aside {
 		width: 50%;
 	}
 	.header {
-	    margin: 1rem 1rem 1rem 1rem;
-    width: auto;
+	    margin: 1rem 1rem 1rem 0rem;
+    width: 100%;
+    padding: 3%;
 	}
-	
 	.header h1 {
-		font-size: 150%;	}
+		font-size: 100%;
+	}
 
 	.main {
-		margin: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 0rem;
 		height: auto;
-		width: auto;
+		width: 100%;
 	}
 	.main h1 {
-		font-size: 150%;
+		font-size: 90%;
 	}
 	.main p {
-		font-size: 100%;
+		font-size: 86%;
 		margin: 5%;
 	}
-	.creditCardForm h1{
-		font-size: 100%;
-	}
 	footer {
-		margin: 1rem 1rem 1rem 1rem;
-		width: auto;
+		margin: 1rem 1rem 1rem 0rem;
+		width: 100%;
 	}
 	.footer p {
 		margin: 0rem 0rem 0rem 0rem;
@@ -634,8 +634,10 @@ aside {
 		height: 100%;
 	}
 	.form-control {
-		display: block;
-		height: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		height: 45rem;
 		width: auto;
 	}
 	.form-control input {
@@ -650,32 +652,14 @@ aside {
 		line-height: 200%;
 		margin: 1rem 0rem 1rem 0rem;
 	}
-	.form-control label {
-		display: flex;
-		margin: 1rem 11rem 1rem 1rem;
-		/* right: 3em; */
-		font-size: 100%;
-		font-family: 'Roboto', sans-serif;
-		letter-spacing: 0px;
-		word-spacing: 4px;
-		color: #0e1709;
-		/* font-weight: bold; */
-		text-decoration: none solid rgb(68, 68, 68);
-		font-style: oblique;
-		font-variant: normal;
-		text-transform: none;
-		outline: none;
-		justify-content: flex-start;
-	}
 	.card-container {
 		padding: 2%;
 		position: relative;
 		justify-content: center;
-		line-height: 100%;
+		line-height: 20%;
 		width: auto;
-		height: 54em;
+		height: 56rem;
 		margin: 1rem 1rem 1rem 1rem;
-	
 	}
 	.nombre {
 		width: 100%;
@@ -689,50 +673,48 @@ aside {
 		width: 100%;
 		position: relative;
 		margin: 1rem 1rem 1rem 1rem;
-		bottom: 1rem;
+		bottom: 3rem;
 	}
 	.mes {
-		width: 74%;
-		position: relative;
-		margin: 1rem 1rem 1rem 1rem;
-		left: 0%;
-		bottom: 0rem;
-	}
-	.year {
-		left: 8em;
 		width: 90%;
 		position: relative;
-		margin: 1rem 0rem 1rem 0rem;
-		bottom: 7rem;
+		margin: 1rem 1rem 1rem 1rem;
+		/* left: 1%; */
+		bottom: 4rem;
+	}
+	.year { 
+		width: 90%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 5em;
 	}
 	.cardNumber {
-		width: 97%;
+		width: 88%;
 		position: relative;
-		margin: 1rem 0rem 1rem 2rem;
+		margin: 1rem 1rem 1rem 1rem;
 		bottom: 6rem;
 	}
-
 	.cvv {
 		width: 37%;
 		position: relative;
-		margin: 1rem 2rem 0rem 4rem;
-		bottom: 5rem;
-		left: -3rem;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 6rem;
 	}
 
 	.cvv input {
 		width: 105%;
-		height: 4em;
+		height: 48%;
 	}
 
 	.buttom1 {
-		left: 0rem;
-		bottom: 11rem;
+		right: 10%;
+		bottom: 90%;
 		width: 100%;
 		position: relative;
+		margin: -20rem 1rem 1rem 4rem;
 		font-family: 'Roboto', sans-serif;
 		font-size: 100%;
-		margin: 1rem 1rem 1rem 1rem;
+		
 	}
 
 	button:hover {
@@ -747,29 +729,24 @@ aside {
 		color: white;
 		text-align: center;
 		text-decoration: none;
-		font-size: 200%;
+		font-size: 150%;
 		padding: 2%;
-		width: 66%;
+		width: 92%;
 		cursor: pointer;
 		font-family: 'Kumbh Sans', sans-serif;
 		margin: 5%;
 		align-items: center;
-		height: 65%;
-	}
-	small {
-		font-size: 80%;
-		padding: 1%;
-		width: 100%;
+		/* height: 10rem; */
+		bottom: 15rem;
 	}
 	.imagenes {
 		flex-direction: column;
-		width: 58%;
+		width: 25%;
 		position: relative;
 		margin: 1rem 1rem 1rem 1rem;
-		left: 52%;
-		bottom: 13rem;
+		left: 45%;
+		bottom: 15rem;
 	}
-
 	.imgMastecard {
 		background-position: -100px 0;
 		width: 100%;
@@ -797,28 +774,29 @@ aside {
 		width: 50%;
 	}
 	.header {
-		margin: 1rem 1rem 1rem 1rem;
-		width: auto;
+	    margin: 1rem 1rem 1rem 0rem;
+    width: 100%;
+    padding: 3%;
 	}
 	.header h1 {
-		font-size: 200%;
+		font-size: 100%;
 	}
 
 	.main {
-		margin: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 0rem;
 		height: auto;
-		width: auto;
+		width: 100%;
 	}
 	.main h1 {
-		font-size: 200%;
+		font-size: 90%;
 	}
 	.main p {
-		font-size: 150%;
+		font-size: 86%;
 		margin: 5%;
 	}
 	footer {
-		margin: 1rem 1rem 1rem 1rem;
-		width: 95%;
+		margin: 1rem 1rem 1rem 0rem;
+		width: 100%;
 	}
 	.footer p {
 		margin: 0rem 0rem 0rem 0rem;
@@ -841,8 +819,10 @@ aside {
 		height: 100%;
 	}
 	.form-control {
-		display: block;
-		height: auto;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		height: 55rem;
 		width: auto;
 	}
 	.form-control input {
@@ -856,21 +836,6 @@ aside {
 		outline: none;
 		line-height: 200%;
 		margin: 1rem 0rem 1rem 0rem;
-	}
-	.form-control label {
-		display: block;
-		margin: 1rem 1rem 1rem 0rem;
-		font-size: 150%;
-		font-family: 'Roboto', sans-serif;
-		letter-spacing: 0px;
-		word-spacing: 4px;
-		color: #0e1709;
-		/* font-weight: bold; */
-		text-decoration: none solid rgb(68, 68, 68);
-		font-style: oblique;
-		font-variant: normal;
-		text-transform: none;
-		outline: none;
 	}
 	.card-container {
 		padding: 2%;
@@ -896,38 +861,34 @@ aside {
 		bottom: 3rem;
 	}
 	.mes {
-		width: 74%;
-		position: relative;
-		margin: 1rem 1rem 1rem 1rem;
-		left: -11%;
-		bottom: 4rem;
-	}
-	.year {
-		left: 21em;
 		width: 90%;
 		position: relative;
-		margin: 1rem 0rem 1rem 0rem;
-		bottom: 13em;
+		margin: 1rem 1rem 1rem 1rem;
+		/* left: 1%; */
+		bottom: 4rem;
 	}
-
-	.cardNumber {
-		width: 97%;
+	.year { 
+		width: 90%;
 		position: relative;
-		margin: 1rem 0rem 1rem 4rem;
-		bottom: 12rem;
-		right: 5%;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 5em;
 	}
-
+	.cardNumber {
+		width: 88%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 6rem;
+	}
 	.cvv {
 		width: 37%;
 		position: relative;
-		margin: 1rem 37rem 4rem 1rem;
-		bottom: 13rem;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 6rem;
 	}
 
 	.cvv input {
 		width: 105%;
-		height: 4em;
+		height: 48%;
 	}
 
 	.buttom1 {
@@ -935,10 +896,10 @@ aside {
 		bottom: 90%;
 		width: 100%;
 		position: relative;
-
+		margin: -20rem 1rem 1rem 4rem;
 		font-family: 'Roboto', sans-serif;
 		font-size: 100%;
-		margin: -24rem 1rem 1rem 4rem;
+		
 	}
 
 	button:hover {
@@ -953,29 +914,25 @@ aside {
 		color: white;
 		text-align: center;
 		text-decoration: none;
-		font-size: 200%;
+		font-size: 211%;
 		padding: 2%;
-		width: 66%;
+		width: 50%;
 		cursor: pointer;
 		font-family: 'Kumbh Sans', sans-serif;
 		margin: 5%;
 		align-items: center;
 		height: 65%;
-	}
-	small {
-		font-size: 80%;
-		padding: 1%;
-		width: 100%;
+		bottom: 20rem;
 	}
 	.imagenes {
 		flex-direction: column;
-		width: 22%;
+		width: 24%;
 		position: relative;
 		margin: 1rem 1rem 1rem 1rem;
-		left: 36%;
-		bottom: 25rem;
+		left: 74%;
+		bottom: 13rem;
+	
 	}
-
 	.imgMastecard {
 		background-position: -100px 0;
 		width: 100%;
@@ -1003,28 +960,29 @@ aside {
 		width: 50%;
 	}
 	.header {
-		margin: 1rem 1rem 1rem 1rem;
-		width: auto;
+	    margin: 1rem 1rem 1rem 0rem;
+    width: 100%;
+    padding: 3%;
 	}
 	.header h1 {
-		font-size: 200%;
+		font-size: 100%;
 	}
 
 	.main {
-		margin: 1rem 1rem 1rem 1rem;
+		margin: 1rem 1rem 1rem 0rem;
 		height: auto;
-		width: auto;
+		width: 100%;
 	}
 	.main h1 {
-		font-size: 200%;
+		font-size: 90%;
 	}
 	.main p {
-		font-size: 150%;
+		font-size: 86%;
 		margin: 5%;
 	}
 	footer {
-		margin: 1rem 1rem 1rem 1rem;
-		width: 95%;
+		margin: 1rem 1rem 1rem 0rem;
+		width: 100%;
 	}
 	.footer p {
 		margin: 0rem 0rem 0rem 0rem;
@@ -1050,7 +1008,7 @@ aside {
 		display: flex;
 		flex-wrap: nowrap;
 		flex-direction: column;
-		height: auto;
+		height: 45rem;
 		width: auto;
 	}
 	.form-control input {
@@ -1064,21 +1022,6 @@ aside {
 		outline: none;
 		line-height: 200%;
 		margin: 1rem 0rem 1rem 0rem;
-	}
-	.form-control label {
-		display: block;
-		margin: 1rem 1rem 1rem 0rem;
-		font-size: 150%;
-		font-family: 'Roboto', sans-serif;
-		letter-spacing: 0px;
-		word-spacing: 4px;
-		color: #0e1709;
-		/* font-weight: bold; */
-		text-decoration: none solid rgb(68, 68, 68);
-		font-style: oblique;
-		font-variant: normal;
-		text-transform: none;
-		outline: none;
 	}
 	.card-container {
 		padding: 2%;
@@ -1104,37 +1047,34 @@ aside {
 		bottom: 3rem;
 	}
 	.mes {
-		width: 74%;
-		position: relative;
-		margin: 1rem 1rem 1rem 1rem;
-		left: -11%;
-		bottom: 4rem;
-	}
-	.year {
-		left: 15em;
 		width: 90%;
 		position: relative;
-		margin: 1rem 0rem 1rem 0rem;
-		bottom: 13em;
+		margin: 1rem 1rem 1rem 1rem;
+		/* left: 1%; */
+		bottom: 4rem;
+	}
+	.year { 
+		width: 90%;
+		position: relative;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 5em;
 	}
 	.cardNumber {
-		width: 97%;
+		width: 88%;
 		position: relative;
-		margin: 1rem 0rem 1rem 4rem;
-		bottom: 12rem;
-		right: 5%;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 6rem;
 	}
-
 	.cvv {
 		width: 37%;
 		position: relative;
-		margin: 1rem 28rem 4rem 1rem;
-		bottom: 13rem;
+		margin: 1rem 1rem 1rem 1rem;
+		bottom: 6rem;
 	}
 
 	.cvv input {
 		width: 105%;
-		height: 4em;
+		height: 48%;
 	}
 
 	.buttom1 {
@@ -1142,13 +1082,13 @@ aside {
 		bottom: 90%;
 		width: 100%;
 		position: relative;
-
+		margin: -20rem 1rem 1rem 4rem;
 		font-family: 'Roboto', sans-serif;
 		font-size: 100%;
-		margin: -24rem 1rem 1rem 4rem;
+		
 	}
 
-	.buttom1:hover {
+	button:hover {
 		background-color: #1a441b;
 		color: white;
 		outline: none;
@@ -1160,29 +1100,25 @@ aside {
 		color: white;
 		text-align: center;
 		text-decoration: none;
-		font-size: 200%;
+		font-size: 100%;
 		padding: 2%;
-		width: 66%;
+		width: 50%;
 		cursor: pointer;
 		font-family: 'Kumbh Sans', sans-serif;
 		margin: 5%;
 		align-items: center;
 		height: 65%;
-	}
-	small {
-		font-size: 80%;
-		padding: 1%;
-		width: 100%;
+		bottom: 13rem;
 	}
 	.imagenes {
 		flex-direction: column;
-		width: 33%;
+		width: 64%;
 		position: relative;
 		margin: 1rem 1rem 1rem 1rem;
-		left: 27%;
-		bottom: 26rem;
+		left: 45%;
+		bottom: 13rem;
+	
 	}
-
 	.imgMastecard {
 		background-position: -100px 0;
 		width: 100%;
