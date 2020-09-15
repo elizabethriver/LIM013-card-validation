@@ -150,7 +150,7 @@ body {
     overflow: visible;
     color: black;
     border-radius: 15px;
-    margin: 1rem 20rem 1rem 20rem;
+    margin: 1rem 30rem 1rem 30rem;
     justify-content: center;
 }
 /* el estilo del contenido del formulario*/
@@ -209,7 +209,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
     padding: 2%;
-    width: 79%;
+    width: 100%;
     outline: none;
     line-height: 200%;
     margin: 1rem 0rem 1rem 0rem;
@@ -263,13 +263,13 @@ body {
 }
 
 .mes {
-    margin: -7rem 1rem 1rem 15rem;
+    margin: 1rem 1rem 1rem 1rem;
     width: 45%;
 }
 
 .year {
 	margin: -7rem 1rem 1rem 20rem;
-    width: 50%;
+
 }
 
 .cvv {
@@ -284,7 +284,8 @@ body {
     position: relative;
     margin: 1rem 1rem 1rem 1rem;
     left: 79%;
-    bottom: 1rem;
+	bottom: 1rem;
+	
 }
 
 .buttom1{
@@ -377,10 +378,10 @@ aside {
 
 .cardMsj {
 
-    margin: 1rem 1rem 1rem 28rem;
+	margin: 9rem 1rem 1rem 28rem;
     background-color: #4caf50;
     padding: 2%;
-    position: static;
+    position: relative;
     justify-content: center;
     align-items: stretch;
     line-height: 1.4em;
@@ -444,6 +445,9 @@ aside {
 		margin: 1rem 1rem 1rem 1rem;
 		width: auto;
 		height: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
 	}
 	.form-control {
 		display: flex;
@@ -495,10 +499,7 @@ aside {
 		bottom: 4rem;
 	}
 	.year { 
-		width: 90%;
-		position: relative;
-		margin: 1rem 1rem 1rem 1rem;
-		bottom: 5em;
+		margin: -7rem 1rem 1rem 20rem;
 	}
 	.cardNumber {
 		width: 88%;
