@@ -150,7 +150,7 @@ body {
     overflow: visible;
     color: black;
     border-radius: 15px;
-    margin: 1rem 30rem 1rem 29rem;
+    margin: 1rem 20rem 1rem 20rem;
     justify-content: center;
 }
 /* el estilo del contenido del formulario*/
@@ -173,10 +173,10 @@ body {
 }
 /* el estilo del contenido de cada parte del formulario*/
 .form-control {
-    margin: 0rem 0rem 0rem 0rem;
+	margin: 0rem 0rem 0rem 0rem;
     padding: 3%;
     position: relative;
-    width: 89%;
+    width: auto;
     align-items: normal;
     line-height: 0%;
     display: flex;
@@ -203,13 +203,13 @@ body {
 }
 /* el estilo del contenido del input del formulario*/
 .form-control input {
-	border: none;
+    border: none;
     border-radius: 10px;
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 90%;
     padding: 2%;
-    width: 100%;
+    width: 79%;
     outline: none;
     line-height: 200%;
     margin: 1rem 0rem 1rem 0rem;
@@ -263,8 +263,8 @@ body {
 }
 
 .mes {
-	margin: 1rem 1rem 1rem 1rem;
-    width: 50%;
+    margin: -7rem 1rem 1rem 15rem;
+    width: 45%;
 }
 
 .year {
@@ -280,10 +280,10 @@ body {
     margin: 1rem 1rem 1rem 1rem;
 }
 .imagenes {
-    width: 36%;
+	width: 18%;
     position: relative;
     margin: 1rem 1rem 1rem 1rem;
-    left: 59%;
+    left: 79%;
     bottom: 1rem;
 }
 
