@@ -13,22 +13,25 @@
     rel="stylesheet">
 </head>
 <!---Cuerpo de la pagina --->
-
 <body>
   <!---Titulo de la pagina --->
   <header class="header">
     <!---Titulo de la pagina --->
-    <figure class="logo">
-      <img src="Agromujer-removebg-preview.png" alt="logo" />
-    </figure>
-    <h1>"Insumos agrícolas para la mujer campesina"</h1>
+    <section class="encabezado">
+      <figure >
+        <img class="logo" src="Agromujer-removebg-preview.png" alt="logo" />
+      </figure>
+      <h1>"Insumos agrícolas para la mujer campesina"</h1>
+    </section>
   </header>
   <!---contenido de la pagina --->
   <main class="main">
     <section class="ocultar">
-      <h1 id="h1" class="ocultar">Procesa tu compra</h1>
-      <p id="saludos" class="ocultar"></p>
-      <p id="p" class="ocultar"></p>
+      <div class="textContext">
+        <h1 id="h1" class="ocultar">Procesa tu compra</h1>
+        <p id="saludos" class="ocultar"></p>
+        <p id="p" class="ocultar"></p>
+      </div>
       <div class="ocultar">
         <button class="button" type="button" id="button1">Continuar</button>
       </div>
@@ -51,68 +54,66 @@
                     title="Apellido registrado en la tarjeta" required />
                   <small>Ejemplo: Rivera</small>
                 </section>
-                <section class="mes">
-                  <label for="mes">Mes</label>
-                  <select id="mes" class="selectMes" required>
-                    <option value="">Mes</option>
-                    <option value="enero">Enero</option>
-                    <option value="febrero">Febrero</option>
-                    <option value="marzo">Marzo</option>
-                    <option value="abril">Abril</option>
-                    <option value="mayo">Mayo</option>
-                    <option value="junio">Junio</option>
-                    <option value="julio">Julio</option>
-                    <option value="agosto">Agosto</option>
-                    <option value="septiembre">Septiembre</option>
-                    <option value="octubre">Octubre</option>
-                    <option value="noviembre">Noviembre</option>
-                    <option value="diciembre">Diciembre</option>
-                  </select>
-                  <small>Ejemplo: Enero</small>
+                <section class="fecha">
+                  <section class="mes">
+                    <label for="mes">Mes</label>
+                    <select id="mes" class="selectMes" required>
+                      <option value="">Mes</option>
+                      <option value="enero">Enero</option>
+                      <option value="febrero">Febrero</option>
+                      <option value="marzo">Marzo</option>
+                      <option value="abril">Abril</option>
+                      <option value="mayo">Mayo</option>
+                      <option value="junio">Junio</option>
+                      <option value="julio">Julio</option>
+                      <option value="agosto">Agosto</option>
+                      <option value="septiembre">Septiembre</option>
+                      <option value="octubre">Octubre</option>
+                      <option value="noviembre">Noviembre</option>
+                      <option value="diciembre">Diciembre</option>
+                    </select>
+                    <small>Ejemplo: Enero</small>
+                  </section>
+                  <section class="year">
+                    <label for="año">Año</label>
+                    <select id="año" class="selectYear" required>
+                      <option value="">Año</option>
+                      <option value="2018">2018</option>
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                    </select>
+                    <small>Ejemplo: 2020</small>
+                  </section>
                 </section>
-                <section class="year">
-                  <label for="año">Año</label>
-                  <select id="año" class="selectYear" required>
-                    <option value="">Año</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                  </select>
-                  <small>Ejemplo: 2020</small>
-                </section>
-                <section class="cardNumber">
-                  <label for="cardNumber">Número de tarjeta</label>
-                  <input type="text" name="cardNumber" placeholder="XXXXXXXXXXXXXXXX" pattern="[0-9]{16}" id="cardNumber"
-                    title="Son los 16 digitos que aparece en tu tarjeta" required />
-                  <small>Ejemplo: 5000000000000000</small>
-                </section>
-                <section class="cvv">
-                  <label for="CVV">CVV</label>
-                  <input type="text" name="CVV" placeholder="CVV" pattern="[0-9]{3}" id="CVV"
-                    title="Los tres ultimos digitos al reverso de tu tarjeta" required />
-                  <small>Ejemplo: 345</small>
-                </section>             
+                <section class="number-card">
+                  <section class="cardNumber">
+                    <label for="cardNumber">Número de tarjeta</label>
+                    <input type="text" name="cardNumber" placeholder="XXXXXXXXXXXXXXXX" pattern="[0-9]{16}" id="cardNumber"
+                      title="Son los 16 digitos que aparece en tu tarjeta" required />
+                    <small>Ejemplo: 5000000000000000</small>
+                  </section>
+                  <section class="cvv">
+                    <label for="CVV">CVV</label>
+                    <input type="text" name="CVV" placeholder="CVV" pattern="[0-9]{3}" id="CVV"
+                      title="Los tres ultimos digitos al reverso de tu tarjeta" required />
+                    <small>Ejemplo: 345</small>
+                  </section> 
+                </section>               
                 <section class="imagenes">
-                  <figure>
-                    <img class="imgVisa" src="credit-card-visa.png" alt="visa" />
-                  </figure>
-                  <figure>
-                    <img class="imgMastecard" src="mastercard.png" alt="mastercard" />
-                  </figure>                  
-                </section>
-
-                  <!-- boton de validacion de tarjeta o formulario -->
-                
-               
+                    <section class="imagenes-figuras">
+                      <img class="imgVisa" src="credit-card-visa.png" alt="visa" />               
+                      <img class="imgMastecard" src="mastercard.png" alt="mastercard" />
+                    </section>             
+                  <!-- boton de validacion de tarjeta o formulario -->               
                   <button  class="myForm" type="submit" id="button2">
                     Validar
-                  </button>
-                
+                  </button>                  
+                </section>             
               </section>
             </form>
           </section>
@@ -127,9 +128,10 @@
         </section>
       </section>
       <!---botonde reinicio de página --->
-      <section id="mostrar1">
+      <section id="mostrar1" class="mostrar1">
         <button class="reload" type="button" id="reload">Volver</button>
       </section>
+    </section>
   </main>
   <footer class="footer">
     <p>
